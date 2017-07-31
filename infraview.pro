@@ -38,6 +38,7 @@ OTHER_FILES += qml/infraview.qml \
     qml/pages/call_netstat.py \
     qml/pages/NetstatInfo.qml \
     qml/pages/Netstat.qml \
+    qml/pages/get_ip_address.sh \
     python/netstat.py \
     python/nmap.py \
     rpm/infraview.spec \

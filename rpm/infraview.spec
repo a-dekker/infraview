@@ -14,7 +14,7 @@ Name:       harbour-infraview
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Examine network aspects of devices
 Version:    0.1
-Release:    0
+Release:    2
 Group:      Qt/Qt
 License:    LICENSE
 URL:        https://github.com/a-dekker/infraview
@@ -71,6 +71,7 @@ desktop-file-install --delete-original       \
 %{_datadir}/%{name}/helper
 %{_datadir}/%{name}/python
 %attr(700,root,root) %{_datadir}/%{name}/python/netstat.py
+%attr(755,root,root) %{_datadir}/%{name}/qml/pages/get_ip_address.sh
 %attr(4755,root,root) %{_datadir}/%{name}/helper/infraview-helper
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/86x86/apps/%{name}.png

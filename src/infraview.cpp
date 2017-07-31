@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
     //
     // To display the view, call "show()" (will show fullscreen on device).
     QGuiApplication* app = SailfishApp::application(argc, argv);
-    qmlRegisterType<Launcher>("Launcher", 1 , 0 , "App");
+    qmlRegisterType<Launcher>("harbour.infraview.Launcher", 1 , 0 , "App");
 
     QQuickView* view = SailfishApp::createView();
     view->rootContext()->setContextProperty("version", appversion);
