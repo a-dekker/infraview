@@ -1,5 +1,9 @@
-* Mon Jul 31 2017 Arno Dekker <jack.tar@example.com> 0.0.1-3
-- Added missing chardet to package
+* mon jul 31 2017 arno dekker <jack.tar@example.com> 0.0.1-5
+- added missing idna to package
+* mon jul 31 2017 arno dekker <jack.tar@example.com> 0.0.1-4
+- added missing certifi to package
+* mon jul 31 2017 arno dekker <jack.tar@example.com> 0.0.1-3
+- added missing chardet to package
 * Mon Jul 31 2017 Arno Dekker <jack.tar@example.com> 0.0.1-2
 - Added missing urllib3 to package
 - Added subnet mask

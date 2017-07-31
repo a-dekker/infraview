@@ -14,7 +14,7 @@ Name:       harbour-infraview
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Examine network aspects of devices
 Version:    0.1
-Release:    3
+Release:    5
 Group:      Qt/Qt
 License:    LICENSE
 URL:        https://github.com/a-dekker/infraview
