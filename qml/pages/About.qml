@@ -73,7 +73,7 @@ Page {
                 x: Theme.paddingLarge
                 color: Theme.primaryColor
                 font.pixelSize: Theme.fontSizeTiny
-                text: "Using <a href=\"https://bitbucket.org/xael\">python-nmap</a>"
+                text: qsTr("Using ") + "<a href=\"https://bitbucket.org/xael\">python-nmap</a>"
                       + ", " + "<a href=\"https://nmap.org/\">nmap</a>" + ", "
                       + "<a href=\"https://github.com/requests/requests\">requests</a>"
                 linkColor: Theme.highlightColor

@@ -55,7 +55,7 @@ Page {
             font.pixelSize: Theme.fontSizeLarge
             height: Theme.itemSizeLarge
             horizontalAlignment: Text.AlignHCenter
-            text: "Retrieving device info"
+            text: qsTr("Retrieving device info")
             verticalAlignment: Text.AlignVCenter
             visible: scanningIndicator.running
             width: parent.width

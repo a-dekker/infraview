@@ -28,27 +28,42 @@
         <source>Author</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../qml/pages/About.qml" line="76"/>
+        <source>Using </source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Arp</name>
+    <message>
+        <location filename="../qml/pages/Arp.qml" line="43"/>
+        <source>Loading ARP cache</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="69"/>
         <source>ARP cache</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Arp.qml" line="127"/>
+        <location filename="../qml/pages/Arp.qml" line="125"/>
         <source>Copy IP address to clipboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Arp.qml" line="133"/>
+        <location filename="../qml/pages/Arp.qml" line="131"/>
         <source>Copy MAC address to clipboard</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>DeviceInfo</name>
+    <message>
+        <location filename="../qml/pages/DeviceInfo.qml" line="58"/>
+        <source>Retrieving device info</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="89"/>
         <source>Device info</source>
@@ -108,6 +123,11 @@
 <context>
     <name>DeviceList</name>
     <message>
+        <location filename="../qml/pages/DeviceList.qml" line="42"/>
+        <source>Scanning for devices</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/pages/DeviceList.qml" line="68"/>
         <source>Devices</source>
         <translation type="unfinished"></translation>
@@ -133,6 +153,11 @@
 </context>
 <context>
     <name>LocationInfo</name>
+    <message>
+        <location filename="../qml/pages/LocationInfo.qml" line="64"/>
+        <source>Retrieving IP location info</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../qml/pages/LocationInfo.qml" line="95"/>
         <source>IP location info</source>
@@ -224,6 +249,11 @@
 </context>
 <context>
     <name>Netstat</name>
+    <message>
+        <location filename="../qml/pages/Netstat.qml" line="50"/>
+        <source>Collecting data...</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../qml/pages/Netstat.qml" line="105"/>
         <source>Local connections</source>

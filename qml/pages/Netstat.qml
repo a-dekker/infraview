@@ -47,7 +47,7 @@ Page {
             font.pixelSize: Theme.fontSizeLarge
             height: Theme.itemSizeLarge
             horizontalAlignment: Text.AlignHCenter
-            text: "Collecting data..."
+            text: qsTr("Collecting data...")
             verticalAlignment: Text.AlignVCenter
             visible: scanningIndicator.running
             width: parent.width

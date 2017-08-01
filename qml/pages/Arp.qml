@@ -40,7 +40,7 @@ Page {
             font.pixelSize: Theme.fontSizeLarge
             height: Theme.itemSizeLarge
             horizontalAlignment: Text.AlignHCenter
-            text: "Loading ARP cache"
+            text: qsTr("Loading ARP cache")
             verticalAlignment: Text.AlignVCenter
             visible: scanningIndicator.running
             width: parent.width
@@ -116,8 +116,6 @@ Page {
                     x: Theme.paddingMedium
                     anchors.top: nameLabel.bottom
                     width: parent.width - Theme.paddingMedium
-                    // enabled: false
-                    // readOnly: true
                     color: Theme.highlightColor
                 }
                 Component {
