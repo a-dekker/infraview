@@ -16,7 +16,6 @@ TEMPLATE = subdirs
 SUBDIRS = src/infraview-helper src
 DEPLOYMENT_PATH = /usr/share/$${TARGET}
 
-translations.files = translations
 translations.path = $${DEPLOYMENT_PATH}
 
 CONFIG += sailfishapp
@@ -43,6 +42,7 @@ OTHER_FILES += qml/infraview.qml \
     python/nmap.py \
     rpm/infraview.spec \
     rpm/infraview.changes \
+    translations/*.ts \
     harbour-infraview.desktop \
 
 HEADERS += \
@@ -66,9 +66,11 @@ script.path = /usr/share/harbour-infraview/helper
 python.files = python/*
 python.path = /usr/share/harbour-infraview/python
 
-INSTALLS += icon86 icon108 icon128 icon256 translations script python
+INSTALLS += translations
 
-# TRANSLATIONS = translations/harbour-infraview-nl.ts \
+TRANSLATIONS = translations/harbour-infraview-sv.ts
+
+INSTALLS += icon86 icon108 icon128 icon256 translations script python
 
 # to disable building translations every time, comment out the
 # following CONFIG line

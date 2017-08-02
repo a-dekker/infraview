@@ -47,12 +47,12 @@
         <translation>ARP-cache</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Arp.qml" line="127"/>
+        <location filename="../qml/pages/Arp.qml" line="125"/>
         <source>Copy IP address to clipboard</source>
         <translation>Kopiera IP-adress till urklipp</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Arp.qml" line="133"/>
+        <location filename="../qml/pages/Arp.qml" line="131"/>
         <source>Copy MAC address to clipboard</source>
         <translation>Kopiera MAC-adress till urklipp</translation>
     </message>
@@ -197,52 +197,72 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="40"/>
+        <location filename="../qml/pages/MainPage.qml" line="50"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="58"/>
+        <location filename="../qml/pages/MainPage.qml" line="68"/>
         <source>External IP info</source>
         <translation>Extern IP-information</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="64"/>
+        <location filename="../qml/pages/MainPage.qml" line="74"/>
         <source>Devices in current network</source>
         <translation>Enheter i aktuellt nätverk</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="70"/>
+        <location filename="../qml/pages/MainPage.qml" line="80"/>
         <source>ARP cache table</source>
         <translation>ARP cache-tabell</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="76"/>
+        <location filename="../qml/pages/MainPage.qml" line="86"/>
         <source>Network port connections</source>
         <translation>Nätverkets portanslutningar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="86"/>
+        <location filename="../qml/pages/MainPage.qml" line="96"/>
         <source>Network type</source>
         <translation>Nätverkstyp</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="107"/>
+        <location filename="../qml/pages/MainPage.qml" line="117"/>
         <source>Network device</source>
         <translation>Nätverksenhet</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="149"/>
+        <location filename="../qml/pages/MainPage.qml" line="159"/>
         <source>Gateway</source>
         <translation>Gateway</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="170"/>
+        <location filename="../qml/pages/MainPage.qml" line="181"/>
+        <source>Broadcast</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="203"/>
+        <source>Domain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="225"/>
+        <source>DHCP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="247"/>
+        <source>DNS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="268"/>
         <source>IP address</source>
         <translation>IP-adress</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="128"/>
+        <location filename="../qml/pages/MainPage.qml" line="138"/>
         <source>Subnet Mask</source>
         <translation>Subnätmask</translation>
     </message>

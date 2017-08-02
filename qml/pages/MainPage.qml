@@ -13,6 +13,11 @@ Page {
     property string myGateWay: "-"
     property string myIP: "-"
     property string myNetMask: "-"
+    property string myDNS: "-"
+    property string myDHCP: "-"
+    property string myBroadcast: "-"
+    property string myDomain: "-"
+    property string mySubnetMask: "-"
 
     Component.onCompleted: {
         networkType = bar.launch(
@@ -26,6 +31,11 @@ Page {
         myGateWay = myIPInfo[1]
         myIP = myIPInfo[2]
         myNetMask = myIPInfo[3]
+        myDNS = myIPInfo[4]
+        myDHCP = myIPInfo[5]
+        myBroadcast = myIPInfo[6]
+        myDomain = myIPInfo[7]
+        mySubnetMask = myIPInfo[8]
     }
 
     SilicaFlickable {
@@ -134,7 +144,7 @@ Page {
 
                 Label {
                     width: parent.width * 0.5
-                    text: myNetMask
+                    text: mySubnetMask !== "?" ? myNetMask + "\n(" + mySubnetMask + ")" : myNetMask
                     color: Theme.highlightColor
                     font.pixelSize: Theme.fontSizeSmall
                     wrapMode: Text.Wrap
@@ -156,6 +166,94 @@ Page {
                 Label {
                     width: parent.width * 0.5
                     text: myGateWay
+                    color: Theme.highlightColor
+                    font.pixelSize: Theme.fontSizeSmall
+                    wrapMode: Text.Wrap
+                }
+            }
+            Row {
+                visible: myBroadcast !== "?"
+                width: parent.width
+                spacing: Theme.paddingSmall
+
+                Label {
+                    width: parent.width * 0.5
+                    text: qsTr("Broadcast")
+                    horizontalAlignment: Text.AlignRight
+                    color: Theme.primaryColor
+                    font.pixelSize: Theme.fontSizeSmall
+                    wrapMode: Text.Wrap
+                }
+
+                Label {
+                    width: parent.width * 0.5
+                    text: myBroadcast
+                    color: Theme.highlightColor
+                    font.pixelSize: Theme.fontSizeSmall
+                    wrapMode: Text.Wrap
+                }
+            }
+            Row {
+                width: parent.width
+                spacing: Theme.paddingSmall
+                visible: myDomain !== "?"
+
+                Label {
+                    width: parent.width * 0.5
+                    text: qsTr("Domain")
+                    horizontalAlignment: Text.AlignRight
+                    color: Theme.primaryColor
+                    font.pixelSize: Theme.fontSizeSmall
+                    wrapMode: Text.Wrap
+                }
+
+                Label {
+                    width: parent.width * 0.5
+                    text: myDomain
+                    color: Theme.highlightColor
+                    font.pixelSize: Theme.fontSizeSmall
+                    wrapMode: Text.Wrap
+                }
+            }
+            Row {
+                width: parent.width
+                spacing: Theme.paddingSmall
+                visible: myDHCP !== "?"
+
+                Label {
+                    width: parent.width * 0.5
+                    text: qsTr("DHCP")
+                    horizontalAlignment: Text.AlignRight
+                    color: Theme.primaryColor
+                    font.pixelSize: Theme.fontSizeSmall
+                    wrapMode: Text.Wrap
+                }
+
+                Label {
+                    width: parent.width * 0.5
+                    text: myDHCP
+                    color: Theme.highlightColor
+                    font.pixelSize: Theme.fontSizeSmall
+                    wrapMode: Text.Wrap
+                }
+            }
+            Row {
+                width: parent.width
+                spacing: Theme.paddingSmall
+                visible: myDNS !== "?"
+
+                Label {
+                    width: parent.width * 0.5
+                    text: qsTr("DNS")
+                    horizontalAlignment: Text.AlignRight
+                    color: Theme.primaryColor
+                    font.pixelSize: Theme.fontSizeSmall
+                    wrapMode: Text.Wrap
+                }
+
+                Label {
+                    width: parent.width * 0.5
+                    text: myDNS.replace(/, /g, "\n")
                     color: Theme.highlightColor
                     font.pixelSize: Theme.fontSizeSmall
                     wrapMode: Text.Wrap
