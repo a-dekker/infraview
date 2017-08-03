@@ -53,6 +53,9 @@ Page {
         }
         contentHeight: column.height
 
+        VerticalScrollDecorator {
+        }
+
         Column {
             id: column
             width: mainPage.width
@@ -63,29 +66,49 @@ Page {
                 title: app.name
             }
 
-            Button {
+            Row {
+                spacing: Theme.paddingSmall
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("External IP info")
-                onClicked: pageStack.push("LocationInfo.qml")
-                width: parent.width * .75
+                Button {
+                    text: qsTr("External IP info")
+                    onClicked: pageStack.push("LocationInfo.qml")
+                    width: isPortrait ? (column.width / 1) * 0.85 : (column.width / 2) * 0.85
+                }
+                Button {
+                    text: qsTr("Devices in current network")
+                    onClicked: pageStack.push("DeviceList.qml")
+                    width: isPortrait ? (column.width / 1) * 0.85 : (column.width / 2) * 0.85
+                    visible: isLandscape
+                }
             }
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: qsTr("Devices in current network")
                 onClicked: pageStack.push("DeviceList.qml")
-                width: parent.width * .75
+                width: isPortrait ? (column.width / 1) * 0.85 : (column.width / 2) * 0.85
+                visible: isPortrait
             }
-            Button {
+            Row {
+                spacing: Theme.paddingSmall
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("ARP cache table")
-                onClicked: pageStack.push("Arp.qml")
-                width: parent.width * .75
+                Button {
+                    text: qsTr("ARP cache table")
+                    onClicked: pageStack.push("Arp.qml")
+                    width: isPortrait ? (column.width / 1) * 0.85 : (column.width / 2) * 0.85
+                }
+                Button {
+                    text: qsTr("Network port connections")
+                    onClicked: pageStack.push("Netstat.qml")
+                    width: isPortrait ? (column.width / 1) * 0.85 : (column.width / 2) * 0.85
+                    visible: isLandscape
+                }
             }
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: qsTr("Network port connections")
                 onClicked: pageStack.push("Netstat.qml")
-                width: parent.width * .75
+                width: isPortrait ? (column.width / 1) * 0.85 : (column.width / 2) * 0.85
+                visible: isPortrait
             }
             Row {
                 width: parent.width
