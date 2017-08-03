@@ -239,22 +239,22 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="181"/>
         <source>Broadcast</source>
-        <translation type="unfinished"></translation>
+        <translation>Sändning</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="203"/>
         <source>Domain</source>
-        <translation type="unfinished"></translation>
+        <translation>Domän</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="225"/>
         <source>DHCP</source>
-        <translation type="unfinished"></translation>
+        <translation >DHCP</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="247"/>
         <source>DNS</source>
-        <translation type="unfinished"></translation>
+        <translation>DNS</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="268"/>
