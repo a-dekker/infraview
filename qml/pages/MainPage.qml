@@ -7,12 +7,8 @@ Page {
 
     property bool largeScreen: Screen.sizeCategory === Screen.Large
                                || Screen.sizeCategory === Screen.ExtraLarge
-    property string networkType: "Unknown"
-    property string networkName: ""
     property string myNetDev: "-"
     property string myGateWay: "-"
-    property string myIP: "-"
-    property string myNetMask: "-"
     property string myDNS: "-"
     property string myDHCP: "-"
     property string myBroadcast: "-"
@@ -20,17 +16,17 @@ Page {
     property string mySubnetMask: "-"
 
     Component.onCompleted: {
-        networkType = bar.launch(
+        app.networkType = bar.launch(
                     "cat /run/state/providers/connman/Internet/NetworkType")
-        var networkName = bar.launch(
+        app.networkName = bar.launch(
                     "cat /run/state/providers/connman/Internet/NetworkName")
         var myIPInfo = bar.launch(
                     "/usr/share/harbour-infraview/qml/pages/get_ip_address.sh")
         myIPInfo = myIPInfo.split(';')
         myNetDev = myIPInfo[0]
         myGateWay = myIPInfo[1]
-        myIP = myIPInfo[2]
-        myNetMask = myIPInfo[3]
+        app.myIP = myIPInfo[2]
+        app.myNetMask = myIPInfo[3]
         myDNS = myIPInfo[4]
         myDHCP = myIPInfo[5]
         myBroadcast = myIPInfo[6]
@@ -125,7 +121,28 @@ Page {
 
                 Label {
                     width: parent.width * 0.5
-                    text: networkType + " " + networkName
+                    text: app.networkType
+                    color: Theme.highlightColor
+                    font.pixelSize: Theme.fontSizeSmall
+                    wrapMode: Text.Wrap
+                }
+            }
+            Row {
+                width: parent.width
+                spacing: Theme.paddingSmall
+
+                Label {
+                    width: parent.width * 0.5
+                    text: qsTr("Network name")
+                    horizontalAlignment: Text.AlignRight
+                    color: Theme.primaryColor
+                    font.pixelSize: Theme.fontSizeSmall
+                    wrapMode: Text.Wrap
+                }
+
+                Label {
+                    width: parent.width * 0.5
+                    text: app.networkName
                     color: Theme.highlightColor
                     font.pixelSize: Theme.fontSizeSmall
                     wrapMode: Text.Wrap
@@ -167,7 +184,7 @@ Page {
 
                 Label {
                     width: parent.width * 0.5
-                    text: mySubnetMask !== "?" ? myNetMask + "\n(" + mySubnetMask + ")" : myNetMask
+                    text: mySubnetMask !== "?" ? app.myNetMask + "\n(" + mySubnetMask + ")" : app.myNetMask
                     color: Theme.highlightColor
                     font.pixelSize: Theme.fontSizeSmall
                     wrapMode: Text.Wrap
@@ -297,7 +314,7 @@ Page {
 
                 Label {
                     width: parent.width * 0.5
-                    text: myIP
+                    text: app.myIP
                     color: Theme.highlightColor
                     font.pixelSize: Theme.fontSizeSmall
                     wrapMode: Text.Wrap

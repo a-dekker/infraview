@@ -36,6 +36,10 @@ ApplicationWindow
 {
     id: app
     property string name: 'InfraView'
+    property string myIP: "-"
+    property string networkType: "Unknown"
+    property string myNetMask: "-"
+    property string networkName: ""
 
     allowedOrientations: Orientation.Portrait | Orientation.Landscape
                          | Orientation.LandscapeInverted

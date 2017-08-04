@@ -80,5 +80,6 @@ CONFIG += sailfishapp_i18n
 # only include these files for translation:
 lupdate_only {
     SOURCES = qml/*.qml \
+              qml/cover/*.qml \
               qml/pages/*.qml
 }
