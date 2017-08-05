@@ -11,7 +11,7 @@ CoverBackground {
         Label {
             id: coverHeader
             anchors.horizontalCenter: parent.horizontalCenter
-            color: Theme.secondaryHighlightColor
+            color: Theme.secondaryColor
             text: app.name
         }
         Separator {

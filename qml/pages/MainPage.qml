@@ -16,6 +16,10 @@ Page {
     property string mySubnetMask: "-"
 
     Component.onCompleted: {
+        getNetworkInfo()
+    }
+
+    function getNetworkInfo() {
         app.networkType = bar.launch(
                     "cat /run/state/providers/connman/Internet/NetworkType")
         app.networkName = bar.launch(
@@ -45,6 +49,12 @@ Page {
             MenuItem {
                 text: qsTr("About")
                 onClicked: pageStack.push(Qt.resolvedUrl("About.qml"))
+            }
+            MenuItem {
+                text: qsTr("Refresh")
+                onClicked: {
+                        getNetworkInfo()
+                }
             }
         }
         contentHeight: column.height
