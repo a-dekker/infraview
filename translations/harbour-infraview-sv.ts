@@ -227,29 +227,29 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="54"/>
         <source>Refresh</source>
-        <translation>Förnya</translation>
+        <translation>Uppdatera</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="79"/>
         <source>External IP info</source>
-        <translation></translation>
+        <translation>Extern IP-information</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="84"/>
         <location filename="../qml/pages/MainPage.qml" line="92"/>
         <source>Devices in current network</source>
-        <translation></translation>
+        <translation>Enheter i aktuellt nätverk</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="101"/>
         <source>ARP cache table</source>
-        <translation></translation>
+        <translation>ARP cache-tabell</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="106"/>
         <location filename="../qml/pages/MainPage.qml" line="114"/>
         <source>Network port connections</source>
-        <translation></translation>
+        <translation>Nätverkets portanslutningar</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="125"/>
@@ -264,7 +264,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="167"/>
         <source>Network device</source>
-        <translation></translation>
+        <translation>Nätverksenhet</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="188"/>
@@ -274,27 +274,27 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="209"/>
         <source>Gateway</source>
-        <translation></translation>
+        <translation>Gateway</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="231"/>
         <source>Broadcast</source>
-        <translation></translation>
+        <translation>Sändning</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="253"/>
         <source>Domain</source>
-        <translation></translation>
+        <translation>Domän</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="275"/>
         <source>DHCP</source>
-        <translation></translation>
+        <translation>DHCP</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="297"/>
         <source>DNS</source>
-        <translation></translation>
+        <translation>DNS</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="318"/>
