@@ -68,7 +68,8 @@ python.path = /usr/share/harbour-infraview/python
 
 INSTALLS += translations
 
-TRANSLATIONS = translations/harbour-infraview-sv.ts
+TRANSLATIONS = translations/harbour-infraview-sv.ts \
+               translations/harbour-infraview-nl.ts
 
 INSTALLS += icon86 icon108 icon128 icon256 translations script python
 
