@@ -39,27 +39,27 @@
     <message>
         <location filename="../qml/pages/Arp.qml" line="56"/>
         <source>Loading ARP cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Läser in ARP-cache</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="81"/>
         <source>Clear all ARP entries</source>
-        <translation type="unfinished"></translation>
+        <translation>Rensar alla ARP-poster</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="82"/>
         <source>Clearing</source>
-        <translation type="unfinished"></translation>
+        <translation>Rensar</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="96"/>
         <source>ARP cache</source>
-        <translation type="unfinished"></translation>
+        <translation>ARP-cache</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="134"/>
         <source>Removing </source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="163"/>
@@ -69,12 +69,12 @@
     <message>
         <location filename="../qml/pages/Arp.qml" line="169"/>
         <source>Copy MAC address to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera MAC-adress till urklipp</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="175"/>
         <source>Remove ARP entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort ARP-post</translation>
     </message>
 </context>
 <context>
@@ -342,7 +342,7 @@
     <message>
         <location filename="../qml/pages/Netstat.qml" line="184"/>
         <source>Kill process</source>
-        <translation type="unfinished"></translation>
+        <translation>Döda process</translation>
     </message>
 </context>
 <context>
