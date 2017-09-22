@@ -1,3 +1,8 @@
+* Fri Sep 22 2017 arno dekker <jack.tar@example.com> 0.0.1-11
+- Option to kill nemo processes in netstat screen
+- Sort netstat list on users and identify by color
+- Added option to clear entire arp cache
+- Added option to remove specific arp cache entry
 * Sun Aug 06 2017 arno dekker <jack.tar@example.com> 0.0.1-10
 - Added dutch language
 - Updated swedish

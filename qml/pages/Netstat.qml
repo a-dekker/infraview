@@ -1,9 +1,14 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import io.thp.pyotherside 1.4
+import harbour.infraview.Launcher 1.0
 
 Page {
     id: netstatPage
+
+    App {
+        id: bar
+    }
 
     Python {
         id: python
@@ -143,6 +148,7 @@ Page {
                     text: exe_name + " (" + UID + ", pid " + pid + ")"
                     width: parent.width - Theme.paddingMedium
                     truncationMode: TruncationMode.Fade
+                    color: UID === "nemo" ? Theme.secondaryColor : (UID === "android" ? Theme.secondaryHighlightColor : Theme.primaryColor )
                 }
                 Label {
                     font.pixelSize: Theme.fontSizeSmall
@@ -172,6 +178,14 @@ Page {
                                                    remotehost: remotehost,
                                                    remoteport: remoteport
                                                })
+                            }
+                        }
+                        MenuItem {
+                            text: qsTr("Kill process")
+                            visible: UID === "nemo"
+                            onClicked: {
+                                bar.launch("/bin/kill -9 " + pid)
+                                listnetstatModel.remove(index)
                             }
                         }
                     }

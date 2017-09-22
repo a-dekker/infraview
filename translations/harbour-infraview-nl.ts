@@ -37,24 +37,44 @@
 <context>
     <name>Arp</name>
     <message>
-        <location filename="../qml/pages/Arp.qml" line="43"/>
+        <location filename="../qml/pages/Arp.qml" line="56"/>
         <source>Loading ARP cache</source>
         <translation>Laden van ARP cache</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Arp.qml" line="69"/>
+        <location filename="../qml/pages/Arp.qml" line="81"/>
+        <source>Clear all ARP entries</source>
+        <translation>Verwijder alle ARP regels</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Arp.qml" line="82"/>
+        <source>Clearing</source>
+        <translation>Verwijderen</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Arp.qml" line="96"/>
         <source>ARP cache</source>
         <translation>ARP cache</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Arp.qml" line="125"/>
+        <location filename="../qml/pages/Arp.qml" line="134"/>
+        <source>Removing </source>
+        <translation>Verwijderen van </translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Arp.qml" line="163"/>
         <source>Copy IP address to clipboard</source>
         <translation>IP adres kopiëren naar klembord</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Arp.qml" line="131"/>
+        <location filename="../qml/pages/Arp.qml" line="169"/>
         <source>Copy MAC address to clipboard</source>
-        <translation>MAC adres Kopiëren naar klembord</translation>
+        <translation>MAC adres kopiëren naar klembord</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Arp.qml" line="175"/>
+        <source>Remove ARP entry</source>
+        <translation type="unfinished">Verwijder ARP regel</translation>
     </message>
 </context>
 <context>
@@ -297,19 +317,24 @@
 <context>
     <name>Netstat</name>
     <message>
-        <location filename="../qml/pages/Netstat.qml" line="50"/>
+        <location filename="../qml/pages/Netstat.qml" line="55"/>
         <source>Collecting data...</source>
         <translation>Verzamelen gegevens...</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Netstat.qml" line="105"/>
+        <location filename="../qml/pages/Netstat.qml" line="110"/>
         <source>Local connections</source>
         <translation>Lokale connecties</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Netstat.qml" line="161"/>
+        <location filename="../qml/pages/Netstat.qml" line="167"/>
         <source>Show more info</source>
         <translation>Toon meer info</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Netstat.qml" line="184"/>
+        <source>Kill process</source>
+        <translation>Beëindigen proces</translation>
     </message>
 </context>
 <context>

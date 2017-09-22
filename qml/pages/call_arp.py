@@ -29,21 +29,27 @@ def show_table():
         try:
             arpcache[index]['ipaddress'] = arpcache[index].pop('IP address')
             arpcache[index]['hwaddress'] = arpcache[index].pop('HW address')
+            arpcache[index]['flags'] = arpcache[index].pop('Flags')
             arpcache[index]['hwtype'] = arpcache[index].pop('HW type')
             arpcache[index]['iface'] = arpcache[index].pop('Device')
             arpcache[index]['Mask'] = arpcache[index].pop('name')
-        except:
+        except BaseException:
             continue
+    # remove incompleted entries
+    arpcache[:] = [d for d in arpcache if d.get('flags') != '0x0']
     for index in range(len(arpcache)):
         # translate to human readable
-        if arpcache[index]['hwtype'] == '0x1':
-            arpcache[index]['hwtype'] = 'ether'
+        try:
+            if arpcache[index]['hwtype'] == '0x1':
+                arpcache[index]['hwtype'] = 'ether'
+        except IndexError:
+            continue
     # hostnames not returned, let see if we can find them
     # and use the mask field for this
     for index in range(len(arpcache)):
         try:
             name = socket.gethostbyaddr(arpcache[index]['ipaddress'])
-        except:
+        except BaseException:
             name = ['']
         arpcache[index]['name'] = name[0]
 

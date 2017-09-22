@@ -9,8 +9,8 @@ def get_geolocation():
     """get geolocation using external IP"""
     try:
         ext_ip = get('https://api.ipify.org').text
-        r = get(url='https://tools.keycdn.com/geo.json?host=' + ext_ip)
-        result = (r.json())
+        query = get(url='https://tools.keycdn.com/geo.json?host=' + ext_ip)
+        result = (query.json())
         latitude = result['data']['geo']['latitude']
         longitude = result['data']['geo']['longitude']
         timezone = result['data']['geo']['timezone']
@@ -24,5 +24,5 @@ def get_geolocation():
         rdns = result['data']['geo']['rdns']
 
         return latitude, longitude, timezone, continent_code, country_code, country_name, city, postal_code, isp, host, rdns
-    except:
+    except BaseException:
         return "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown", "Unknown"

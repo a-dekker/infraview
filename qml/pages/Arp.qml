@@ -1,9 +1,18 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import io.thp.pyotherside 1.4
+import harbour.infraview.Launcher 1.0
 
 Page {
     id: arpPage
+
+    Component.onCompleted: {
+        loadArp()
+    }
+
+    RemorsePopup {
+        id: remorsepop
+    }
 
     Python {
         id: python
@@ -14,15 +23,6 @@ Page {
             importModule('call_arp', function () {
                 console.log('call_arp module is now imported')
             })
-
-            call('call_arp.show_table', [], function (result) {
-                // Load the received data into the list model
-                for (var i = 0; i < result.length; i++) {
-                    // console.log(JSON.stringify(result[i]))
-                    listarpModel.append(result[i])
-                }
-                scanningIndicator.running = false
-            })
         }
 
         onError: {
@@ -30,6 +30,19 @@ Page {
             Clipboard.text = traceback
         }
     }
+
+    function loadArp() {
+        python.call('call_arp.show_table', [], function (result) {
+            listarpModel.clear()
+            // Load the received data into the list model
+            for (var i = 0; i < result.length; i++) {
+                // console.log(JSON.stringify(result[i]))
+                listarpModel.append(result[i])
+            }
+            scanningIndicator.running = false
+        })
+    }
+
     Item {
         id: busy
         anchors.fill: parent
@@ -58,6 +71,20 @@ Page {
     // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {
         anchors.fill: parent
+
+        App {
+            id: bar
+        }
+
+        PullDownMenu {
+            MenuItem {
+                text: qsTr("Clear all ARP entries")
+                onClicked: remorsepop.execute(qsTr("Clearing"), function () {
+                    bar.launch("/usr/share/harbour-infraview/helper/infraview-helper delete_arp")
+                    loadArp()
+                })
+            }
+        }
 
         SilicaListView {
             id: listarp
@@ -99,6 +126,17 @@ Page {
                         }
                     }
                 }
+                RemorseItem {
+                    id: remorse
+                }
+
+                function showRemorseItem() {
+                    remorseAction(qsTr("Removing ") + ipaddress,
+                                  function () {
+                                      bar.launch("/usr/share/harbour-infraview/helper/infraview-helper " + ipaddress)
+                                      loadArp()
+                                  })
+                }
 
                 Label {
                     id: nameLabel
@@ -131,6 +169,12 @@ Page {
                             text: qsTr("Copy MAC address to clipboard")
                             onClicked: {
                                 Clipboard.text = hwaddress
+                            }
+                        }
+                        MenuItem {
+                            text: qsTr("Remove ARP entry")
+                            onClicked: {
+                                showRemorseItem()
                             }
                         }
                     }

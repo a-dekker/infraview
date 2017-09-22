@@ -11,18 +11,18 @@ PROC_TCP6 = "/proc/net/tcp6"
 PROC_UDP6 = "/proc/net/udp6"
 PROC_PACKET = "/proc/net/packet"
 TCP_STATE = {
-        '01': 'ESTABLISHED',
-        '02': 'SYN_SENT',
-        '03': 'SYN_RECV',
-        '04': 'FIN_WAIT1',
-        '05': 'FIN_WAIT2',
-        '06': 'TIME_WAIT',
-        '07': 'CLOSE',
-        '08': 'CLOSE_WAIT',
-        '09': 'LAST_ACK',
-        '0A': 'LISTEN',
-        '0B': 'CLOSING'
-        }
+    '01': 'ESTABLISHED',
+    '02': 'SYN_SENT',
+    '03': 'SYN_RECV',
+    '04': 'FIN_WAIT1',
+    '05': 'FIN_WAIT2',
+    '06': 'TIME_WAIT',
+    '07': 'CLOSE',
+    '08': 'CLOSE_WAIT',
+    '09': 'LAST_ACK',
+    '0A': 'LISTEN',
+    '0B': 'CLOSING'
+}
 
 
 def _tcp4load():
@@ -70,13 +70,29 @@ def _hex2dec(s):
 
 
 def _ip(s):
-    ip = [(_hex2dec(s[6:8])), (_hex2dec(s[4:6])), (_hex2dec(s[2:4])), (_hex2dec(s[0:2]))]
+    ip = [(_hex2dec(s[6:8])), (_hex2dec(s[4:6])),
+          (_hex2dec(s[2:4])), (_hex2dec(s[0:2]))]
     return '.'.join(ip)
 
 
 def _ip6(s):
     # this may need to be converted to a string to work properly.
-    ip = [s[6:8],s[4:6],s[2:4],s[0:2],s[12:14],s[14:16],s[10:12],s[8:10],s[22:24],s[20:22],s[18:20],s[16:18],s[30:32],s[28:30],s[26:28],s[24:26]]
+    ip = [s[6:8],
+          s[4:6],
+          s[2:4],
+          s[0:2],
+          s[12:14],
+          s[14:16],
+          s[10:12],
+          s[8:10],
+          s[22:24],
+          s[20:22],
+          s[18:20],
+          s[16:18],
+          s[30:32],
+          s[28:30],
+          s[26:28],
+          s[24:26]]
     return ':'.join(ip)
 
 
@@ -104,23 +120,36 @@ def netstat_tcp4():
     tcpcontent = _tcp4load()
     tcpresult = []
     for line in tcpcontent:
-        line_array = _remove_empty(line.split(' '))         # Split lines and remove empty spaces.
-        l_host, l_port = _convert_ipv4_port(line_array[1])  # Convert ipaddress and port from hex to decimal.
+        # Split lines and remove empty spaces.
+        line_array = _remove_empty(line.split(' '))
+        # Convert ipaddress and port from hex to decimal.
+        l_host, l_port = _convert_ipv4_port(line_array[1])
         r_host, r_port = _convert_ipv4_port(line_array[2])
         tcp_id = line_array[0]
         state = TCP_STATE[line_array[3]]
         try:
             uid = pwd.getpwuid(int(line_array[7]))[0]   # Get user from UID.
-        except:
+        except BaseException:
             uid = "android"
-        inode = line_array[9]                           # Need the inode to get process pid.
+        # Need the inode to get process pid.
+        inode = line_array[9]
         pid = _get_pid_of_inode(inode)                  # Get pid prom inode.
         try:                                            # try read the process name.
-            exe = os.readlink('/proc/'+pid+'/exe')
-        except:
+            exe = os.readlink('/proc/' + pid + '/exe')
+        except BaseException:
             exe = None
 
-        nline = ['tcp4', tcp_id, uid, l_host, l_port, r_host, r_port, state, pid, exe]
+        nline = [
+            'tcp4',
+            tcp_id,
+            uid,
+            l_host,
+            l_port,
+            r_host,
+            r_port,
+            state,
+            pid,
+            exe]
         tcpresult.append(nline)
     return tcpresult
 
@@ -139,17 +168,28 @@ def netstat_tcp6():
         tcp_id = line_array[0]
         state = TCP_STATE[line_array[3]]
         try:
-            uid = pwd.getpwuid(int(line_array[7]))[0]       # Get user from UID.
-        except:
+            # Get user from UID.
+            uid = pwd.getpwuid(int(line_array[7]))[0]
+        except BaseException:
             uid = "android"
         inode = line_array[9]
         pid = _get_pid_of_inode(inode)
         try:                                            # try read the process name.
-            exe = os.readlink('/proc/'+pid+'/exe')
-        except:
+            exe = os.readlink('/proc/' + pid + '/exe')
+        except BaseException:
             exe = None
 
-        nline = ['tcp6', tcp_id, uid, l_host, l_port, r_host, r_port, state, pid, exe]
+        nline = [
+            'tcp6',
+            tcp_id,
+            uid,
+            l_host,
+            l_port,
+            r_host,
+            r_port,
+            state,
+            pid,
+            exe]
         tcpresult.append(nline)
     return tcpresult
 
@@ -173,11 +213,21 @@ def netstat_udp4():
         inode = line_array[9]
         pid = _get_pid_of_inode(inode)
         try:
-            exe = os.readlink('/proc/'+pid+'/exe')
-        except:
+            exe = os.readlink('/proc/' + pid + '/exe')
+        except BaseException:
             exe = None
 
-        nline = ['udp4', udp_id, uid, l_host, l_port, r_host, r_port, udp_state, pid, exe]
+        nline = [
+            'udp4',
+            udp_id,
+            uid,
+            l_host,
+            l_port,
+            r_host,
+            r_port,
+            udp_state,
+            pid,
+            exe]
         udpresult.append(nline)
     return udpresult
 
@@ -201,11 +251,21 @@ def netstat_udp6():
         inode = line_array[9]
         pid = _get_pid_of_inode(inode)
         try:
-            exe = os.readlink('/proc/'+pid+'/exe')
-        except:
+            exe = os.readlink('/proc/' + pid + '/exe')
+        except BaseException:
             exe = None
 
-        nline = ['udp6', udp_id, uid, l_host, l_port, r_host, r_port, udp_state, pid, exe]
+        nline = [
+            'udp6',
+            udp_id,
+            uid,
+            l_host,
+            l_port,
+            r_host,
+            r_port,
+            udp_state,
+            pid,
+            exe]
         udpresult.append(nline)
     return udpresult
 
@@ -222,8 +282,8 @@ def packet_socket():
         inode = line_array[8].rstrip()
         pid = _get_pid_of_inode(inode)
         try:
-            exe = os.readlink('/proc/'+pid+'/exe')
-        except:
+            exe = os.readlink('/proc/' + pid + '/exe')
+        except BaseException:
             exe = None
 
         nline = [pid, exe]
@@ -240,20 +300,26 @@ def _get_pid_of_inode(inode):
         try:
             if re.search(inode, os.readlink(item)):
                 return item.split('/')[2]
-        except:
+        except BaseException:
             pass
     return None
 
+
 if __name__ == '__main__':
     # print ("\nLegend: Connection ID, UID, localhost:localport, remotehost:remoteport, state, pid, exe name")
+    connection_list = []
     for conn_tcp in netstat_tcp4():
-        print (conn_tcp)
+        connection_list.append(conn_tcp)
     for conn_tcp6 in netstat_tcp6():
-        print (conn_tcp6)
+        connection_list.append(conn_tcp6)
     for conn_udp in netstat_udp4():
-        print (conn_udp)
+        connection_list.append(conn_udp)
     for conn_udp6 in netstat_udp6():
-        print (conn_udp6)
+        connection_list.append(conn_udp6)
     # print ("\nPacket Socket Results:\n")
     # for pack_sock in packet_socket():
     #     print (pack_sock)
+    # sort on username
+    connection_list.sort(key=lambda x: x[2])
+    for i in range(len(connection_list)):
+        print(connection_list[i])
