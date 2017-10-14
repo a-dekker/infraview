@@ -129,7 +129,7 @@ def netstat_tcp4():
         state = TCP_STATE[line_array[3]]
         try:
             uid = pwd.getpwuid(int(line_array[7]))[0]   # Get user from UID.
-        except BaseException:
+        except KeyError:
             uid = "android"
         # Need the inode to get process pid.
         inode = line_array[9]
@@ -170,7 +170,7 @@ def netstat_tcp6():
         try:
             # Get user from UID.
             uid = pwd.getpwuid(int(line_array[7]))[0]
-        except BaseException:
+        except KeyError:
             uid = "android"
         inode = line_array[9]
         pid = _get_pid_of_inode(inode)
@@ -209,7 +209,10 @@ def netstat_udp4():
         r_host, r_port = _convert_ipv4_port(line_array[2])
         udp_id = line_array[0]
         udp_state = 'Stateless'  # UDP is stateless
-        uid = pwd.getpwuid(int(line_array[7]))[0]
+        try:
+            uid = pwd.getpwuid(int(line_array[7]))[0]
+        except KeyError:
+            uid = "android"
         inode = line_array[9]
         pid = _get_pid_of_inode(inode)
         try:
@@ -313,7 +316,7 @@ if __name__ == '__main__':
     for conn_tcp6 in netstat_tcp6():
         connection_list.append(conn_tcp6)
     for conn_udp in netstat_udp4():
-        connection_list.append(conn_udp)
+            connection_list.append(conn_udp)
     for conn_udp6 in netstat_udp6():
         connection_list.append(conn_udp6)
     # print ("\nPacket Socket Results:\n")
