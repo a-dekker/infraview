@@ -21,7 +21,7 @@
     <message>
         <location filename="../qml/pages/About.qml" line="49"/>
         <source>Device network information</source>
-        <translation>Apparaat netwerk informatie</translation>
+        <translation>Apparaatnetwerkinformatie</translation>
     </message>
     <message>
         <location filename="../qml/pages/About.qml" line="58"/>
@@ -39,12 +39,12 @@
     <message>
         <location filename="../qml/pages/Arp.qml" line="56"/>
         <source>Loading ARP cache</source>
-        <translation>Laden van ARP cache</translation>
+        <translation>Laden van ARP-cache</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="81"/>
         <source>Clear all ARP entries</source>
-        <translation>Verwijder alle ARP regels</translation>
+        <translation>Alle ARP-regels verwijderen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="82"/>
@@ -54,7 +54,7 @@
     <message>
         <location filename="../qml/pages/Arp.qml" line="96"/>
         <source>ARP cache</source>
-        <translation>ARP cache</translation>
+        <translation>ARP-cache</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="134"/>
@@ -64,17 +64,17 @@
     <message>
         <location filename="../qml/pages/Arp.qml" line="163"/>
         <source>Copy IP address to clipboard</source>
-        <translation>IP adres kopiëren naar klembord</translation>
+        <translation>IP-adres kopiëren naar klembord</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="169"/>
         <source>Copy MAC address to clipboard</source>
-        <translation>MAC adres kopiëren naar klembord</translation>
+        <translation>MAC-adres kopiëren naar klembord</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="175"/>
         <source>Remove ARP entry</source>
-        <translation type="unfinished">Verwijder ARP regel</translation>
+        <translation>ARP-regel verwijderen</translation>
     </message>
 </context>
 <context>
@@ -82,22 +82,22 @@
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="36"/>
         <source>Network name</source>
-        <translation>Netwerk naam</translation>
+        <translation>Netwerknaam</translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="47"/>
         <source>Subnet Mask</source>
-        <translation>Subnet Mask</translation>
+        <translation>Subnetmasker</translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="58"/>
         <source>IP address</source>
-        <translation>IP adres</translation>
+        <translation>IP-adres</translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="25"/>
         <source>Network type</source>
-        <translation>Netwerk type</translation>
+        <translation>Netwerktype</translation>
     </message>
 </context>
 <context>
@@ -105,22 +105,22 @@
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="58"/>
         <source>Retrieving device info</source>
-        <translation>Verzamelen apparaat info</translation>
+        <translation>Apparaatinfo verzamelen</translation>
     </message>
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="89"/>
         <source>Device info</source>
-        <translation>Apparaat info</translation>
+        <translation>Apparaatinfo</translation>
     </message>
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="97"/>
         <source>IP address</source>
-        <translation>IP adres</translation>
+        <translation>IP-adres</translation>
     </message>
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="120"/>
         <source>MAC address</source>
-        <translation>MAC adres</translation>
+        <translation>MAC-adres</translation>
     </message>
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="143"/>
@@ -130,17 +130,17 @@
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="166"/>
         <source>Vendor</source>
-        <translation>Verkoper</translation>
+        <translation>Leverancier</translation>
     </message>
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="189"/>
         <source>OS Family</source>
-        <translation>OS Familie</translation>
+        <translation>OS-familie</translation>
     </message>
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="212"/>
         <source>OS Name</source>
-        <translation>OS Naam</translation>
+        <translation>OS-naam</translation>
     </message>
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="235"/>
@@ -155,7 +155,7 @@
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="281"/>
         <source>Open TCP ports</source>
-        <translation>Open TCP poorten</translation>
+        <translation>Open TCP-poorten</translation>
     </message>
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="291"/>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../qml/pages/DeviceList.qml" line="42"/>
         <source>Scanning for devices</source>
-        <translation>Zoeken naar appraten</translation>
+        <translation>Zoeken naar apparaten</translation>
     </message>
     <message>
         <location filename="../qml/pages/DeviceList.qml" line="68"/>
@@ -183,7 +183,7 @@
     <message>
         <location filename="../qml/pages/DeviceList.qml" line="144"/>
         <source>Copy IP address to clipboard</source>
-        <translation>IP adres kopiëren naar klembord</translation>
+        <translation>IP-adres kopiëren naar klembord</translation>
     </message>
 </context>
 <context>
@@ -191,12 +191,12 @@
     <message>
         <location filename="../qml/pages/LocationInfo.qml" line="64"/>
         <source>Retrieving IP location info</source>
-        <translation>Ophalen IP lokatie info</translation>
+        <translation>IP-locatieinfo ophalen</translation>
     </message>
     <message>
         <location filename="../qml/pages/LocationInfo.qml" line="95"/>
         <source>IP location info</source>
-        <translation>IP lokatie info</translation>
+        <translation>IP-locatieinfo</translation>
     </message>
     <message>
         <location filename="../qml/pages/LocationInfo.qml" line="112"/>
@@ -244,7 +244,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="79"/>
         <source>External IP info</source>
-        <translation>Externe IP info</translation>
+        <translation>Externe IP-info</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="84"/>
@@ -255,33 +255,33 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="101"/>
         <source>ARP cache table</source>
-        <translation>ARP cache tabel</translation>
+        <translation>ARP-cachetabel</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="106"/>
         <location filename="../qml/pages/MainPage.qml" line="114"/>
         <source>Network port connections</source>
-        <translation>Netwerk poort verbindingen</translation>
+        <translation>Netwerkpoortverbindingen</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="125"/>
         <source>Network type</source>
-        <translation>Netwerk type</translation>
+        <translation>Netwerktype</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="146"/>
         <source>Network name</source>
-        <translation>Netwerk naam</translation>
+        <translation>Netwerknaam</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="167"/>
         <source>Network device</source>
-        <translation>Netwerk apparaat</translation>
+        <translation>Netwerkapparaat</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="188"/>
         <source>Subnet Mask</source>
-        <translation>Subnet Mask</translation>
+        <translation>Subnetmasker</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="209"/>
@@ -311,7 +311,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="318"/>
         <source>IP address</source>
-        <translation>IP adres</translation>
+        <translation>IP-adres</translation>
     </message>
 </context>
 <context>
@@ -319,12 +319,12 @@
     <message>
         <location filename="../qml/pages/Netstat.qml" line="55"/>
         <source>Collecting data...</source>
-        <translation>Verzamelen gegevens...</translation>
+        <translation>Gegevens verzamelen…</translation>
     </message>
     <message>
         <location filename="../qml/pages/Netstat.qml" line="110"/>
         <source>Local connections</source>
-        <translation>Lokale connecties</translation>
+        <translation>Lokale verbindingen</translation>
     </message>
     <message>
         <location filename="../qml/pages/Netstat.qml" line="167"/>
@@ -334,7 +334,7 @@
     <message>
         <location filename="../qml/pages/Netstat.qml" line="184"/>
         <source>Kill process</source>
-        <translation>Beëindigen proces</translation>
+        <translation>Proces beëindigen</translation>
     </message>
 </context>
 <context>
@@ -342,7 +342,7 @@
     <message>
         <location filename="../qml/pages/NetstatInfo.qml" line="37"/>
         <source>Connection info</source>
-        <translation>Connectie info</translation>
+        <translation>Verbindingsinfo</translation>
     </message>
     <message>
         <location filename="../qml/pages/NetstatInfo.qml" line="45"/>
@@ -357,12 +357,12 @@
     <message>
         <location filename="../qml/pages/NetstatInfo.qml" line="91"/>
         <source>Program name</source>
-        <translation>Programma naam</translation>
+        <translation>Programmanaam</translation>
     </message>
     <message>
         <location filename="../qml/pages/NetstatInfo.qml" line="114"/>
         <source>Process ID</source>
-        <translation>Proces ID</translation>
+        <translation>Proces-ID</translation>
     </message>
     <message>
         <location filename="../qml/pages/NetstatInfo.qml" line="135"/>
