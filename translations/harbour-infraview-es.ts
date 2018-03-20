@@ -207,32 +207,32 @@
         <translation>Info de ubicación de la IP</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="112"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="113"/>
         <source>External IP</source>
         <translation>IP pública</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="135"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="136"/>
         <source>Timezone</source>
         <translation>Zona horaria</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="158"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="159"/>
         <source>Country</source>
         <translation>País</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="181"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="182"/>
         <source>City</source>
         <translation>Ciudad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="204"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="205"/>
         <source>ISP</source>
         <translation>ISP</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="227"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="228"/>
         <source>rDNS</source>
         <translation>rDNS</translation>
     </message>

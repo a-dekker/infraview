@@ -100,8 +100,9 @@ Page {
                 source: "https://maps.googleapis.com/maps/api/staticmap?center="
                         + latitude + "," + longitude + "&markers=color:red%7Clabel:C%7C" + latitude
                         + "," + longitude + "&zoom=11&size=" + Screen.width + "x" + Screen.width
-                width: parent.width - (2 * Theme.paddingSmall)
+                width: column.width - (2 * Theme.paddingSmall)
                 visible: host !== "Unknown"
+                height: column.width
             }
             Row {
                 width: parent.width
