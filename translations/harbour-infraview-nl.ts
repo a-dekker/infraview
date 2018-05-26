@@ -190,13 +190,13 @@
     <name>DnsPage</name>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="45"/>
-        <source>DNS Query</source>
-        <translation type="unfinished"></translation>
+        <source>DNS query</source>
+        <translation type="unfinished">DNS zoekopdracht</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="56"/>
         <source>Enter IP or hostname to resolve</source>
-        <translation type="unfinished"></translation>
+        <translation>Geef IP of hostnaam om te zoeken</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="75"/>
@@ -458,17 +458,17 @@
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="13"/>
         <source>About</source>
-        <translation type="unfinished">Over</translation>
+        <translation>Over</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="32"/>
         <source>Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>Gereedschap</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="37"/>
         <source>DNS resolving</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">DNS doorzoeken</translation>
     </message>
 </context>
 </TS>

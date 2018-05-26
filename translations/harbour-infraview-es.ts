@@ -190,7 +190,7 @@
     <name>DnsPage</name>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="45"/>
-        <source>DNS Query</source>
+        <source>DNS query</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

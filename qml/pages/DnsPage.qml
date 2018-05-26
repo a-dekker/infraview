@@ -42,7 +42,7 @@ Page {
             spacing: 10
             width: parent.width
             PageHeader {
-                title: qsTr("DNS Query")
+                title: qsTr("DNS query")
             }
             Row {
                 x: Theme.paddingLarge

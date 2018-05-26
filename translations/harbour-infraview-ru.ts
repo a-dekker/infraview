@@ -155,10 +155,6 @@
 <context>
     <name>DnsPage</name>
     <message>
-        <source>DNS Query</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Enter IP or hostname to resolve</source>
         <translation type="unfinished"></translation>
     </message>
@@ -200,6 +196,10 @@
     </message>
     <message>
         <source>TXT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>DNS query</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
