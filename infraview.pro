@@ -35,9 +35,12 @@ OTHER_FILES += qml/infraview.qml \
     qml/pages/call_location.py \
     qml/pages/call_nmap.py \
     qml/pages/call_netstat.py \
+    qml/pages/call_ip.py \
     qml/pages/NetstatInfo.qml \
     qml/pages/Netstat.qml \
     qml/pages/get_ip_address.sh \
+    qml/pages/ToolPage.qml \
+    qml/pages/DnsPage.qml \
     python/netstat.py \
     python/nmap.py \
     rpm/infraview.spec \
@@ -70,6 +73,7 @@ INSTALLS += translations
 
 TRANSLATIONS = translations/harbour-infraview-es.ts \
                translations/harbour-infraview-sv.ts \
+               translations/harbour-infraview-ru.ts \
                translations/harbour-infraview-nl.ts
 
 INSTALLS += icon86 icon108 icon128 icon256 translations script python

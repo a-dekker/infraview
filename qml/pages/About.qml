@@ -75,7 +75,8 @@ Page {
                 font.pixelSize: Theme.fontSizeTiny
                 text: qsTr("Using ") + "<a href=\"https://bitbucket.org/xael\">python-nmap</a>"
                       + ", " + "<a href=\"https://nmap.org/\">nmap</a>" + ", "
-                      + "<a href=\"https://github.com/requests/requests\">requests</a>"
+                      + "<a href=\"https://github.com/requests/requests\">requests</a>" + ", "
+                      + "<a href=\"https://github.com/rthalley/dnspython\">dnspython</a>"
                 linkColor: Theme.highlightColor
                 onLinkActivated: Qt.openUrlExternally(link)
                 anchors.horizontalCenter: parent.horizontalCenter

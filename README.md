@@ -7,7 +7,8 @@ This Sailfish OS app e.g. uses (python) nmap to gather network related info
 * Devices in current network (nmap)
 * ARP cache table info
 * Local network port connections (netstat)
+* DNS resolving
 
-Uses [python-nmap] (http://xael.org/pages/python-nmap-en.html), [nmap] (https://nmap.org/)
+Uses [python-nmap] (http://xael.org/pages/python-nmap-en.html), [nmap] (https://nmap.org/), [dnspython] (https://github.com/rthalley/dnspython)
 
 App can be downloaded from [openrepos.net] (https://openrepos.net/content/ade/infraview)

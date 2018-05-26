@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>About</name>
     <message>
@@ -150,6 +150,57 @@
     <message>
         <source>Copy IP address to clipboard</source>
         <translation>Копировать IP в буфер</translation>
+    </message>
+</context>
+<context>
+    <name>DnsPage</name>
+    <message>
+        <source>DNS Query</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter IP or hostname to resolve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>AAAA</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>CAA</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>CNAME</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>MX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>NS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PTR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SOA</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SRV</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TXT</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -321,6 +372,21 @@
     <message>
         <source>State</source>
         <translation>Состояние</translation>
+    </message>
+</context>
+<context>
+    <name>ToolPage</name>
+    <message>
+        <source>Tools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>DNS resolving</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="unfinished">О программе</translation>
     </message>
 </context>
 </TS>
