@@ -17,7 +17,7 @@
     </message>
     <message>
         <source>Device network information</source>
-        <translation>Сведения об устройствах в сети</translation>
+        <translation>Узнайте больше о своей сети</translation>
     </message>
     <message>
         <source>Author</source>
@@ -25,7 +25,7 @@
     </message>
     <message>
         <source>Using </source>
-        <translation>Использует</translation>
+        <translation>Использует </translation>
     </message>
 </context>
 <context>
@@ -156,51 +156,51 @@
     <name>DnsPage</name>
     <message>
         <source>Enter IP or hostname to resolve</source>
-        <translation type="unfinished"></translation>
+        <translation>Введите IP или доменное имя</translation>
     </message>
     <message>
         <source>A</source>
-        <translation type="unfinished"></translation>
+        <translation>A</translation>
     </message>
     <message>
         <source>AAAA</source>
-        <translation type="unfinished"></translation>
+        <translation>AAAA</translation>
     </message>
     <message>
         <source>CAA</source>
-        <translation type="unfinished"></translation>
+        <translation>CAA</translation>
     </message>
     <message>
         <source>CNAME</source>
-        <translation type="unfinished"></translation>
+        <translation>CNAME</translation>
     </message>
     <message>
         <source>MX</source>
-        <translation type="unfinished"></translation>
+        <translation>MX</translation>
     </message>
     <message>
         <source>NS</source>
-        <translation type="unfinished"></translation>
+        <translation>NS</translation>
     </message>
     <message>
         <source>PTR</source>
-        <translation type="unfinished"></translation>
+        <translation>PTR</translation>
     </message>
     <message>
         <source>SOA</source>
-        <translation type="unfinished"></translation>
+        <translation>SOA</translation>
     </message>
     <message>
         <source>SRV</source>
-        <translation type="unfinished"></translation>
+        <translation>SRV</translation>
     </message>
     <message>
         <source>TXT</source>
-        <translation type="unfinished"></translation>
+        <translation>TXT</translation>
     </message>
     <message>
         <source>DNS query</source>
-        <translation type="unfinished"></translation>
+        <translation>DNS запрос</translation>
     </message>
 </context>
 <context>
@@ -378,15 +378,15 @@
     <name>ToolPage</name>
     <message>
         <source>Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>Инструменты</translation>
     </message>
     <message>
         <source>DNS resolving</source>
-        <translation type="unfinished"></translation>
+        <translation>DNS запросы</translation>
     </message>
     <message>
         <source>About</source>
-        <translation type="unfinished">О программе</translation>
+        <translation>О программе</translation>
     </message>
 </context>
 </TS>
