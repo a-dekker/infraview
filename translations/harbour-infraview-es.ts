@@ -190,63 +190,63 @@
     <name>DnsPage</name>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="45"/>
-        <source>DNS query</source>
-        <translation type="unfinished"></translation>
+        <source>DNS Query</source>
+        <translation>Consulta de DNS</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="56"/>
         <source>Enter IP or hostname to resolve</source>
-        <translation type="unfinished"></translation>
+        <translation>Indica IP o nombre de host para resolver</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="75"/>
         <source>A</source>
-        <translation type="unfinished"></translation>
+        <translation>A</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="84"/>
         <source>AAAA</source>
-        <translation type="unfinished"></translation>
+        <translation>AAAA</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="93"/>
         <source>CAA</source>
-        <translation type="unfinished"></translation>
+        <translation>CAA</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="102"/>
         <source>CNAME</source>
-        <translation type="unfinished"></translation>
+        <translation>CNAME</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="111"/>
         <source>MX</source>
-        <translation type="unfinished"></translation>
+        <translation>MX</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="124"/>
         <source>NS</source>
-        <translation type="unfinished"></translation>
+        <translation>NS</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="133"/>
         <source>PTR</source>
-        <translation type="unfinished"></translation>
+        <translation>PTR</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="142"/>
         <source>SOA</source>
-        <translation type="unfinished"></translation>
+        <translation>SOA</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="151"/>
         <source>SRV</source>
-        <translation type="unfinished"></translation>
+        <translation>SRV</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="160"/>
         <source>TXT</source>
-        <translation type="unfinished"></translation>
+        <translation>TXT</translation>
     </message>
 </context>
 <context>
@@ -466,17 +466,17 @@
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="13"/>
         <source>About</source>
-        <translation type="unfinished">Acerca de</translation>
+        <translation>Acerca de</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="32"/>
         <source>Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>Herramientas</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="37"/>
         <source>DNS resolving</source>
-        <translation type="unfinished"></translation>
+        <translation>Resolución de DNS</translation>
     </message>
 </context>
 </TS>
