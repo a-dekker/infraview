@@ -19,6 +19,13 @@ Page {
         getNetworkInfo()
     }
 
+    onStatusChanged: {
+        switch (status) {
+        case PageStatus.Active:
+            pageStack.pushAttached(Qt.resolvedUrl("ToolPage.qml"))
+        }
+    }
+
     function getNetworkInfo() {
         app.networkType = bar.launch(
                     "cat /run/state/providers/connman/Internet/NetworkType")

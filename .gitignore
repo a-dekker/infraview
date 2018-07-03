@@ -29,3 +29,4 @@ Makefile*
 
 .tx/config
 .ropeproject
+*.pyc

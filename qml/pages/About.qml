@@ -66,7 +66,7 @@ Page {
                 visible: isPortrait || (largeScreen && screen.width > 1080)
             }
             Label {
-                text: "© Arno Dekker 2017"
+                text: "© Arno Dekker 2017-2018"
                 anchors.horizontalCenter: parent.horizontalCenter
             }
             Label {
@@ -75,7 +75,8 @@ Page {
                 font.pixelSize: Theme.fontSizeTiny
                 text: qsTr("Using ") + "<a href=\"https://bitbucket.org/xael\">python-nmap</a>"
                       + ", " + "<a href=\"https://nmap.org/\">nmap</a>" + ", "
-                      + "<a href=\"https://github.com/requests/requests\">requests</a>"
+                      + "<a href=\"https://github.com/requests/requests\">requests</a>" + ", "
+                      + "<a href=\"https://github.com/rthalley/dnspython\">dnspython</a>"
                 linkColor: Theme.highlightColor
                 onLinkActivated: Qt.openUrlExternally(link)
                 anchors.horizontalCenter: parent.horizontalCenter
