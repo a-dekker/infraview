@@ -1,3 +1,7 @@
+* Sat Nov 17 2018 arno dekker <jack.tar@example.com> 0.0.1-18
+- Updated Spanish
+- Removed ISP location image, as it now requires Google apikey
+- Replaced ISP location image with OpenStreetMap link
 * Sun Mar 18 2018 arno dekker <jack.tar@example.com> 0.0.1-17
 - Added Russian translation
 - Added DNS resolve page

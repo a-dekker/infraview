@@ -190,8 +190,8 @@
     <name>DnsPage</name>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="45"/>
-        <source>DNS Query</source>
-        <translation>Consulta de DNS</translation>
+        <source>DNS query</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="56"/>
@@ -270,32 +270,32 @@
         <translation>Info de ubicación de la IP</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="113"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="118"/>
         <source>External IP</source>
         <translation>IP pública</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="136"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="141"/>
         <source>Timezone</source>
         <translation>Zona horaria</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="159"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="164"/>
         <source>Country</source>
         <translation>País</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="182"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="187"/>
         <source>City</source>
         <translation>Ciudad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="205"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="210"/>
         <source>ISP</source>
         <translation>ISP</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="228"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="233"/>
         <source>rDNS</source>
         <translation>rDNS</translation>
     </message>
