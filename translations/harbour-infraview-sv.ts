@@ -82,109 +82,109 @@
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="53"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Namn</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="73"/>
         <source>Identifier</source>
-        <translation type="unfinished"></translation>
+        <translation>ID</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="93"/>
         <source>Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Typ</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="113"/>
         <source>State</source>
-        <translation type="unfinished">Status</translation>
+        <translation>Status</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="194"/>
         <source>IPv4 Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv4-konfiguration</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="215"/>
         <source>IPv6</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv6</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="235"/>
         <source>IPv6 Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv6-konfiguration</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="255"/>
         <source>Auto Connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Auto-anslutning</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="295"/>
         <source>Saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Sparad</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="303"/>
         <location filename="../qml/pages/ConnmanInfo.qml" line="343"/>
         <source>false</source>
-        <translation type="unfinished"></translation>
+        <translation>falskt</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="303"/>
         <location filename="../qml/pages/ConnmanInfo.qml" line="343"/>
         <source>true</source>
-        <translation type="unfinished"></translation>
+        <translation>sant</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="356"/>
         <source>Security</source>
-        <translation type="unfinished"></translation>
+        <translation>Säkerhet</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="377"/>
         <source>Time servers</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidsservrar</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="398"/>
         <source>Name servers</source>
-        <translation type="unfinished"></translation>
+        <translation>Namnservrar</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="133"/>
         <source>Strength</source>
-        <translation type="unfinished"></translation>
+        <translation>Styrka</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="275"/>
         <source>Ethernet</source>
-        <translation type="unfinished"></translation>
+        <translation>Ethernet</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="45"/>
         <source>ConnMan connection details</source>
-        <translation type="unfinished"></translation>
+        <translation>ConnMan anslutningsdetaljer</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="153"/>
         <source>Default Access</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardåtkomst</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="315"/>
         <source>Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Favorit</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="335"/>
         <source>Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Dold</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="174"/>
         <source>IPv4</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv4</translation>
     </message>
 </context>
 <context>
@@ -192,22 +192,22 @@
     <message>
         <location filename="../qml/pages/ConnmanNetServices.qml" line="43"/>
         <source>Collecting data...</source>
-        <translation type="unfinished">Samlar in data...</translation>
+        <translation>Samlar in data...</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanNetServices.qml" line="69"/>
         <source>Known ConnMan connections</source>
-        <translation type="unfinished"></translation>
+        <translation>Kända ConnMan-anslutningar</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanNetServices.qml" line="112"/>
         <source>Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>Dold</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanNetServices.qml" line="130"/>
         <source>Show more info</source>
-        <translation type="unfinished">Visa mer information</translation>
+        <translation>Visa mer information</translation>
     </message>
 </context>
 <context>
@@ -470,7 +470,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="128"/>
         <source>ConnMan connections</source>
-        <translation type="unfinished"></translation>
+        <translation>ConnMan-anslutningar</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="138"/>
