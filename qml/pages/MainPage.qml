@@ -123,6 +123,12 @@ Page {
                 width: isPortrait ? (column.width / 1) * 0.85 : (column.width / 2) * 0.85
                 visible: isPortrait
             }
+            Button {
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: qsTr("ConnMan connections")
+                onClicked: pageStack.push("ConnmanNetServices.qml")
+                width: isPortrait ? (column.width / 1) * 0.85 : (column.width / 2) * 0.85
+            }
             Row {
                 width: parent.width
                 spacing: Theme.paddingSmall

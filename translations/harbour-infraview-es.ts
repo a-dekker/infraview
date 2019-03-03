@@ -78,6 +78,139 @@
     </message>
 </context>
 <context>
+    <name>ConnmanInfo</name>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="53"/>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="73"/>
+        <source>Identifier</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="93"/>
+        <source>Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="113"/>
+        <source>State</source>
+        <translation type="unfinished">Estado</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="194"/>
+        <source>IPv4 Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="215"/>
+        <source>IPv6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="235"/>
+        <source>IPv6 Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="255"/>
+        <source>Auto Connect</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="295"/>
+        <source>Saved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="303"/>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="343"/>
+        <source>false</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="303"/>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="343"/>
+        <source>true</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="356"/>
+        <source>Security</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="377"/>
+        <source>Time servers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="398"/>
+        <source>Name servers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="133"/>
+        <source>Strength</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="275"/>
+        <source>Ethernet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="45"/>
+        <source>ConnMan connection details</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="153"/>
+        <source>Default Access</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="315"/>
+        <source>Favorite</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="335"/>
+        <source>Hidden</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="174"/>
+        <source>IPv4</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ConnmanNetServices</name>
+    <message>
+        <location filename="../qml/pages/ConnmanNetServices.qml" line="43"/>
+        <source>Collecting data...</source>
+        <translation type="unfinished">Recopilando datos...</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanNetServices.qml" line="69"/>
+        <source>Known ConnMan connections</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanNetServices.qml" line="112"/>
+        <source>Hidden</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanNetServices.qml" line="130"/>
+        <source>Show more info</source>
+        <translation type="unfinished">Mostrar más info</translation>
+    </message>
+</context>
+<context>
     <name>CoverPage</name>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="36"/>
@@ -335,52 +468,57 @@
         <translation>Conexiones de puertos de red</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="132"/>
+        <location filename="../qml/pages/MainPage.qml" line="128"/>
+        <source>ConnMan connections</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="138"/>
         <source>Network type</source>
         <translation>Tipo de red</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="153"/>
+        <location filename="../qml/pages/MainPage.qml" line="159"/>
         <source>Network name</source>
         <translation>Nombre de red</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="174"/>
+        <location filename="../qml/pages/MainPage.qml" line="180"/>
         <source>Network device</source>
         <translation>Nombre de dispositivo</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="195"/>
+        <location filename="../qml/pages/MainPage.qml" line="201"/>
         <source>Subnet Mask</source>
         <translation>Máscara de subred</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="216"/>
+        <location filename="../qml/pages/MainPage.qml" line="222"/>
         <source>Gateway</source>
         <translation>Puerta de enlace</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="238"/>
+        <location filename="../qml/pages/MainPage.qml" line="244"/>
         <source>Broadcast</source>
         <translation>Broadcast</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="260"/>
+        <location filename="../qml/pages/MainPage.qml" line="266"/>
         <source>Domain</source>
         <translation>Dominio</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="282"/>
+        <location filename="../qml/pages/MainPage.qml" line="288"/>
         <source>DHCP</source>
         <translation>DHCP</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="304"/>
+        <location filename="../qml/pages/MainPage.qml" line="310"/>
         <source>DNS</source>
         <translation>DNS</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="325"/>
+        <location filename="../qml/pages/MainPage.qml" line="331"/>
         <source>IP address</source>
         <translation>Dirección IP</translation>
     </message>

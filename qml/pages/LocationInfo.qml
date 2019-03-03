@@ -31,17 +31,17 @@ Page {
 
             call('call_location.get_geolocation', [], function (result) {
                 // console.log(result)
-                latitude = result[0]
-                longitude = result[1]
-                timezone = result[2]
-                continent_code = result[3]
-                country_code = result[4]
-                country_name = result[5]
-                city = result[6]
-                postal_code = result[7]
-                isp = result[8]
-                host = result[9]
-                rdns = result[10]
+                latitude = result["latitude"]
+                longitude = result["longitude"]
+                timezone = result["timezone"]
+                continent_code = result["continent_code"]
+                country_code = result["country_code"]
+                country_name = result["country_name"]
+                city = result["city"]
+                postal_code = result["postal_code"]
+                isp = result["isp"]
+                host = result["host"]
+                rdns = result["rdns"]
                 scanningIndicator.running = false
             })
         }
