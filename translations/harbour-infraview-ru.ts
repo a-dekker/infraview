@@ -64,6 +64,112 @@
     </message>
 </context>
 <context>
+    <name>ConnmanInfo</name>
+    <message>
+        <source>Ethernet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Favorite</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hidden</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>IPv4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Identifier</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Security</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Strength</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>State</source>
+        <translation type="unfinished">Состояние</translation>
+    </message>
+    <message>
+        <source>Saved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>ConnMan connection details</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>IPv4 Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Default Access</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>IPv6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>IPv6 Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Auto Connect</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Time servers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Name servers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>true</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ConnmanNetServices</name>
+    <message>
+        <source>Collecting data...</source>
+        <translation type="unfinished">Сбор данных...</translation>
+    </message>
+    <message>
+        <source>Show more info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Known ConnMan connections</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hidden</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CoverPage</name>
     <message>
         <source>Network name</source>
@@ -310,6 +416,10 @@
     <message>
         <source>IP address</source>
         <translation>IP-адрес</translation>
+    </message>
+    <message>
+        <source>ConnMan connections</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

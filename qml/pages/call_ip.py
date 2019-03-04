@@ -41,7 +41,7 @@ def is_valid_url(address):
     return re.match(regex, address)
 
 
-def show_ip_info(host_ip,record_type):
+def show_ip_info(host_ip, record_type):
     """
         Resolve DNS name to IP
     """

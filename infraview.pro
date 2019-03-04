@@ -38,6 +38,9 @@ OTHER_FILES += qml/infraview.qml \
     qml/pages/call_ip.py \
     qml/pages/NetstatInfo.qml \
     qml/pages/Netstat.qml \
+    qml/pages/ConnmanInfo.qml \
+    qml/pages/ConnmanNetServices.qml \
+    qml/pages/call_connman.py \
     qml/pages/get_ip_address.sh \
     qml/pages/ToolPage.qml \
     qml/pages/DnsPage.qml \
@@ -60,6 +63,9 @@ icon108.path = /usr/share/icons/hicolor/108x108/apps
 icon128.files += icons/128x128/harbour-infraview.png
 icon128.path = /usr/share/icons/hicolor/128x128/apps
 
+icon172.files += icons/172x172/harbour-infraview.png
+icon172.path = /usr/share/icons/hicolor/172x172/apps
+
 icon256.files += icons/256x256/harbour-infraview.png
 icon256.path = /usr/share/icons/hicolor/256x256/apps
 
@@ -76,7 +82,7 @@ TRANSLATIONS = translations/harbour-infraview-es.ts \
                translations/harbour-infraview-ru.ts \
                translations/harbour-infraview-nl.ts
 
-INSTALLS += icon86 icon108 icon128 icon256 translations script python
+INSTALLS += icon86 icon108 icon128 icon172 icon256 translations script python
 
 # to disable building translations every time, comment out the
 # following CONFIG line

@@ -78,6 +78,139 @@
     </message>
 </context>
 <context>
+    <name>ConnmanInfo</name>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="53"/>
+        <source>Name</source>
+        <translation>Naam</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="73"/>
+        <source>Identifier</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="93"/>
+        <source>Type</source>
+        <translation>Type</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="113"/>
+        <source>State</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="194"/>
+        <source>IPv4 Configuration</source>
+        <translation>IPv4 Configuratie</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="215"/>
+        <source>IPv6</source>
+        <translation>IPv6</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="235"/>
+        <source>IPv6 Configuration</source>
+        <translation>IPv6 Configuratie</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="255"/>
+        <source>Auto Connect</source>
+        <translation>Automatisch verbinden</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="295"/>
+        <source>Saved</source>
+        <translation>Opgeslagen</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="303"/>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="343"/>
+        <source>false</source>
+        <translation>nee</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="303"/>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="343"/>
+        <source>true</source>
+        <translation>ja</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="356"/>
+        <source>Security</source>
+        <translation>Beveiliging</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="377"/>
+        <source>Time servers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="398"/>
+        <source>Name servers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="133"/>
+        <source>Strength</source>
+        <translation>Sterkte</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="275"/>
+        <source>Ethernet</source>
+        <translation>Ethernet</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="45"/>
+        <source>ConnMan connection details</source>
+        <translation>ConnMan connectie details</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="153"/>
+        <source>Default Access</source>
+        <translation>Standaard Toegang</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="315"/>
+        <source>Favorite</source>
+        <translation>Favoriet</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="335"/>
+        <source>Hidden</source>
+        <translation>Verborgen</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanInfo.qml" line="174"/>
+        <source>IPv4</source>
+        <translation>IPv4</translation>
+    </message>
+</context>
+<context>
+    <name>ConnmanNetServices</name>
+    <message>
+        <location filename="../qml/pages/ConnmanNetServices.qml" line="43"/>
+        <source>Collecting data...</source>
+        <translation>Gegevens verzamelen…</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanNetServices.qml" line="69"/>
+        <source>Known ConnMan connections</source>
+        <translation>Bekende ConnMan verbindingen</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanNetServices.qml" line="112"/>
+        <source>Hidden</source>
+        <translation>Verborgen</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ConnmanNetServices.qml" line="130"/>
+        <source>Show more info</source>
+        <translation>Toon meer info</translation>
+    </message>
+</context>
+<context>
     <name>CoverPage</name>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="36"/>
@@ -191,7 +324,7 @@
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="45"/>
         <source>DNS query</source>
-        <translation type="unfinished">DNS zoekopdracht</translation>
+        <translation>DNS zoekopdracht</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="56"/>
@@ -201,52 +334,52 @@
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="75"/>
         <source>A</source>
-        <translation type="unfinished"></translation>
+        <translation>A</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="84"/>
         <source>AAAA</source>
-        <translation type="unfinished"></translation>
+        <translation>AAAA</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="93"/>
         <source>CAA</source>
-        <translation type="unfinished"></translation>
+        <translation>CAA</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="102"/>
         <source>CNAME</source>
-        <translation type="unfinished"></translation>
+        <translation>CNAME</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="111"/>
         <source>MX</source>
-        <translation type="unfinished"></translation>
+        <translation>MX</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="124"/>
         <source>NS</source>
-        <translation type="unfinished"></translation>
+        <translation>NS</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="133"/>
         <source>PTR</source>
-        <translation type="unfinished"></translation>
+        <translation>PTR</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="142"/>
         <source>SOA</source>
-        <translation type="unfinished"></translation>
+        <translation>SOA</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="151"/>
         <source>SRV</source>
-        <translation type="unfinished"></translation>
+        <translation>SRV</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="160"/>
         <source>TXT</source>
-        <translation type="unfinished"></translation>
+        <translation>TXT</translation>
     </message>
 </context>
 <context>
@@ -262,32 +395,32 @@
         <translation>IP-locatieinfo</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="113"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="118"/>
         <source>External IP</source>
         <translation>Extern IP</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="136"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="141"/>
         <source>Timezone</source>
         <translation>Tijdzone</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="159"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="164"/>
         <source>Country</source>
         <translation>Land</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="182"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="187"/>
         <source>City</source>
         <translation>Stad</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="205"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="210"/>
         <source>ISP</source>
         <translation>ISP</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LocationInfo.qml" line="228"/>
+        <location filename="../qml/pages/LocationInfo.qml" line="233"/>
         <source>rDNS</source>
         <translation>rDNS</translation>
     </message>
@@ -327,52 +460,57 @@
         <translation>Netwerkpoortverbindingen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="132"/>
+        <location filename="../qml/pages/MainPage.qml" line="128"/>
+        <source>ConnMan connections</source>
+        <translation>ConnMan connecties</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="138"/>
         <source>Network type</source>
         <translation>Netwerktype</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="153"/>
+        <location filename="../qml/pages/MainPage.qml" line="159"/>
         <source>Network name</source>
         <translation>Netwerknaam</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="174"/>
+        <location filename="../qml/pages/MainPage.qml" line="180"/>
         <source>Network device</source>
         <translation>Netwerkapparaat</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="195"/>
+        <location filename="../qml/pages/MainPage.qml" line="201"/>
         <source>Subnet Mask</source>
         <translation>Subnetmasker</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="216"/>
+        <location filename="../qml/pages/MainPage.qml" line="222"/>
         <source>Gateway</source>
         <translation>Gateway</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="238"/>
+        <location filename="../qml/pages/MainPage.qml" line="244"/>
         <source>Broadcast</source>
         <translation>Broadcast</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="260"/>
+        <location filename="../qml/pages/MainPage.qml" line="266"/>
         <source>Domain</source>
         <translation>Domein</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="282"/>
+        <location filename="../qml/pages/MainPage.qml" line="288"/>
         <source>DHCP</source>
         <translation>DHCP</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="304"/>
+        <location filename="../qml/pages/MainPage.qml" line="310"/>
         <source>DNS</source>
         <translation>DNS</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="325"/>
+        <location filename="../qml/pages/MainPage.qml" line="331"/>
         <source>IP address</source>
         <translation>IP-adres</translation>
     </message>
@@ -468,7 +606,7 @@
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="37"/>
         <source>DNS resolving</source>
-        <translation type="unfinished">DNS doorzoeken</translation>
+        <translation>DNS doorzoeken</translation>
     </message>
 </context>
 </TS>

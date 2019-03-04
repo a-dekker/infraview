@@ -30,18 +30,18 @@ Page {
             })
 
             call('call_location.get_geolocation', [], function (result) {
-                console.log(result)
-                latitude = result[0]
-                longitude = result[1]
-                timezone = result[2]
-                continent_code = result[3]
-                country_code = result[4]
-                country_name = result[5]
-                city = result[6]
-                postal_code = result[7]
-                isp = result[8]
-                host = result[9]
-                rdns = result[10]
+                // console.log(result)
+                latitude = result["latitude"]
+                longitude = result["longitude"]
+                timezone = result["timezone"]
+                continent_code = result["continent_code"]
+                country_code = result["country_code"]
+                country_name = result["country_name"]
+                city = result["city"]
+                postal_code = result["postal_code"]
+                isp = result["isp"]
+                host = result["host"]
+                rdns = result["rdns"]
                 scanningIndicator.running = false
             })
         }
@@ -94,15 +94,20 @@ Page {
             PageHeader {
                 title: qsTr("IP location info")
             }
-            Image {
+            Rectangle {
+                height: Theme.paddingLarge
+                width: Theme.paddingLarge
+                color: "transparent"
+            }
+            IconButton {
                 anchors.horizontalCenter: parent.horizontalCenter
-                fillMode: Image.PreserveAspectFit
-                source: "https://maps.googleapis.com/maps/api/staticmap?center="
-                        + latitude + "," + longitude + "&markers=color:red%7Clabel:C%7C" + latitude
-                        + "," + longitude + "&zoom=11&size=" + Screen.width + "x" + Screen.width
-                width: column.width - (2 * Theme.paddingSmall)
-                visible: host !== "Unknown"
-                height: column.width
+                icon.source: "image://theme/icon-m-location"
+                // text: qsTr("View on OpenStreetMap")
+                onClicked: {
+                    var openstreetmapURL = 'https://www.openstreetmap.org/?mlat=' + latitude + '&mlon=' + longitude + '&zoom=12'
+                    Qt.openUrlExternally(openstreetmapURL)
+                }
+                visible: !scanningIndicator.running
             }
             Row {
                 width: parent.width
@@ -234,7 +239,7 @@ Page {
                 }
 
                 Label {
-                    width: parent.width * 0.5
+                    width: parent.width * 0.5 - Theme.paddingMedium
                     text: rdns
                     visible: !scanningIndicator.running
                     color: Theme.highlightColor
