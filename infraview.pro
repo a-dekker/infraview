@@ -44,6 +44,7 @@ OTHER_FILES += qml/infraview.qml \
     qml/pages/get_ip_address.sh \
     qml/pages/ToolPage.qml \
     qml/pages/DnsPage.qml \
+    qml/pages/TraceroutePage.qml \
     python/netstat.py \
     python/nmap.py \
     rpm/infraview.spec \

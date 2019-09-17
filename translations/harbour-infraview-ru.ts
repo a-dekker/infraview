@@ -62,6 +62,10 @@
         <source>Remove ARP entry</source>
         <translation>Удалить ARP-запись</translation>
     </message>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished">Обновить</translation>
+    </message>
 </context>
 <context>
     <name>ConnmanInfo</name>
@@ -257,6 +261,10 @@
         <source>Copy IP address to clipboard</source>
         <translation>Копировать IP в буфер</translation>
     </message>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished">Обновить</translation>
+    </message>
 </context>
 <context>
     <name>DnsPage</name>
@@ -441,6 +449,10 @@
         <source>Kill process</source>
         <translation>Остановить процесс</translation>
     </message>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished">Обновить</translation>
+    </message>
 </context>
 <context>
     <name>NetstatInfo</name>
@@ -498,6 +510,21 @@
     <message>
         <source>About</source>
         <translation>О программе</translation>
+    </message>
+    <message>
+        <source>Traceroute</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TraceroutePage</name>
+    <message>
+        <source>Traceroute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter IP or hostname for traceroute</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

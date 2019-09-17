@@ -15,17 +15,16 @@ def extract_values(values):
     return val
 
 
-def extract_list(list):
+def extract_list(mylist):
     val = ""
-    for i in list:
+    for i in mylist:
         val += " " + str(i)
     return val
 
 
 bus = dbus.SystemBus()
 
-manager = dbus.Interface(
-    bus.get_object("net.connman", "/"), "net.connman.Manager")
+manager = dbus.Interface(bus.get_object("net.connman", "/"), "net.connman.Manager")
 
 
 def get_access_points():
@@ -33,25 +32,39 @@ def get_access_points():
     for path, properties in manager.GetServices():
         mydict = {}
         service = dbus.Interface(
-            bus.get_object("net.connman", path), "net.connman.Service")
-        identifier = path[path.rfind("/") + 1:]
-        mydict['Identifier'] = identifier
+            bus.get_object("net.connman", path), "net.connman.Service"
+        )
+        identifier = path[path.rfind("/") + 1 :]
+        mydict["Identifier"] = identifier
 
         for key in properties.keys():
             if key in [
-                    "IPv4", "IPv4.Configuration", "IPv6", "IPv6.Configuration",
-                    "Proxy", "Proxy.Configuration", "Ethernet", "Provider"
+                "IPv4",
+                "IPv4.Configuration",
+                "IPv6",
+                "IPv6.Configuration",
+                "Proxy",
+                "Proxy.Configuration",
+                "Ethernet",
+                "Provider",
             ]:
                 val = extract_values(properties[key])
             elif key in [
-                    "Nameservers", "Nameservers.Configuration", "Domains",
-                    "Domains.Configuration", "Timeservers",
-                    "Timeservers.Configuration", "Security"
+                "Nameservers",
+                "Nameservers.Configuration",
+                "Domains",
+                "Domains.Configuration",
+                "Timeservers",
+                "Timeservers.Configuration",
+                "Security",
             ]:
                 val = extract_list(properties[key])
             elif key in [
-                    "Favorite", "Immutable", "AutoConnect", "LoginRequired",
-                    "PassphraseRequired"
+                "Favorite",
+                "Immutable",
+                "AutoConnect",
+                "LoginRequired",
+                "PassphraseRequired",
             ]:
                 if properties[key] == dbus.Boolean(1):
                     val = "true"

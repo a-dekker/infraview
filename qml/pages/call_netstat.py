@@ -5,8 +5,8 @@ import ast
 def show_connections():
     """Get list of network connections"""
     connections = subprocess.check_output(
-        "/usr/share/harbour-infraview/helper/infraview-helper",
-        shell=True)
+        "/usr/share/harbour-infraview/helper/infraview-helper", shell=True
+    )
     dlist = []
     netstat_keys = [
         "udp_tcp",
@@ -18,7 +18,8 @@ def show_connections():
         "remoteport",
         "conn_state",
         "pid",
-        "exe_name"]
+        "exe_name",
+    ]
     for line in connections.splitlines():
         x = ast.literal_eval(line.decode("utf-8"))
         key_value = zip(netstat_keys, x)

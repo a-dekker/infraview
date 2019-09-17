@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Page {
@@ -36,6 +36,11 @@ Page {
                 x: (parent.width - width) / 2
                 text: qsTr("DNS resolving")
                 onClicked: pageStack.push(Qt.resolvedUrl('DnsPage.qml'))
+            }
+            Button {
+                x: (parent.width - width) / 2
+                text: qsTr("Traceroute")
+                onClicked: pageStack.push(Qt.resolvedUrl('TraceroutePage.qml'))
             }
         }
     }

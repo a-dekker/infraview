@@ -16,36 +16,38 @@
       names of its contributors may be used to endorse or promote products
       derived from this software without specific prior written permission.
 
-  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR
-  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-  (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE
+  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
 #ifdef QT_QML_DEBUG
 #include <QtQuick>
 #endif
 
-#include <QtQml>
 #include <qqml.h>
 #include <sailfishapp.h>
 #include <QProcess>
 #include <QQuickView>
 #include <QtGui>
+#include <QtQml>
 #include "osread.h"
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char* argv[]) {
     QProcess appinfo;
     QString appversion;
     // read app version from rpm database on startup
-    appinfo.start("/bin/rpm", QStringList() << "-qa" << "--queryformat" << "%{version}-%{RELEASE}" << "harbour-infraview");
+    appinfo.start("/bin/rpm", QStringList() << "-qa"
+                                            << "--queryformat"
+                                            << "%{version}-%{RELEASE}"
+                                            << "harbour-infraview");
     appinfo.waitForFinished(-1);
     if (appinfo.bytesAvailable() > 0) {
         appversion = appinfo.readAll();
@@ -59,7 +61,7 @@ int main(int argc, char *argv[])
     //
     // To display the view, call "show()" (will show fullscreen on device).
     QGuiApplication* app = SailfishApp::application(argc, argv);
-    qmlRegisterType<Launcher>("harbour.infraview.Launcher", 1 , 0 , "App");
+    qmlRegisterType<Launcher>("harbour.infraview.Launcher", 1, 0, "App");
 
     QQuickView* view = SailfishApp::createView();
     view->rootContext()->setContextProperty("version", appversion);
@@ -67,4 +69,3 @@ int main(int argc, char *argv[])
     view->show();
     return app->exec();
 }
-

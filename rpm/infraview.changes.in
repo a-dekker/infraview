@@ -1,3 +1,8 @@
+* Tue Sep 17 2019 arno dekker <jack.tar@example.com> 0.0.2-1
+- Load mainpage info async
+- Fixed dimmed color issue
+- Refresh option added on multiple pages
+- Added traceroute on tools page
 * Sun Mar 10 2019 arno dekker <jack.tar@example.com> 0.0.1-20
 - Updated translations
 * Sun Mar 03 2019 arno dekker <jack.tar@example.com> 0.0.1-19

@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import io.thp.pyotherside 1.5
 
@@ -23,10 +23,11 @@ Page {
     }
 
     function showResolveResult() {
-        python.call('call_ip.show_ip_info', [ip_url.text, recordType], function (result) {
-            // console.log(result)
-            found_hostname.text = result
-        })
+        python.call('call_ip.show_ip_info', [ip_url.text, recordType],
+                    function (result) {
+                        // console.log(result)
+                        found_hostname.text = result
+                    })
     }
 
     SilicaFlickable {
@@ -54,7 +55,7 @@ Page {
                     y: Theme.paddingLarge
                     font.pixelSize: Theme.fontSizeMedium
                     placeholderText: qsTr('Enter IP or hostname to resolve')
-                    width: column.width - (2 * Theme.paddingLarge)- iconButton.width
+                    width: column.width - (2 * Theme.paddingLarge) - iconButton.width
                     EnterKey.highlighted: true
                     inputMethodHints: Qt.ImhUrlCharactersOnly
                     EnterKey.enabled: text.trim().length > 0

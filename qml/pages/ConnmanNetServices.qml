@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import io.thp.pyotherside 1.5
 
@@ -131,26 +131,26 @@ Page {
                             onClicked: {
                                 pageStack.push(Qt.resolvedUrl(
                                                    "ConnmanInfo.qml"), {
-                                                   con_name: Name,
-                                                   identifier: Identifier,
-                                                   autoConnect: AutoConnect,
-                                                   con_state: ConnState,
-                                                   defaultAccess: DefaultAccess,
-                                                   autoConnect: AutoConnect,
-                                                   ethernet: Ethernet,
-                                                   favorite: Favorite,
-                                                   con_hidden: ConnHidden,
-                                                   ipv4: IPv4,
-                                                   ipv4Configuration: IPv4_Configuration,
-                                                   ipv6: IPv6,
-                                                   ipv6Configuration: IPv6_Configuration,
-                                                   security: Security,
-                                                   con_type: Type,
-                                                   strength: Strength,
-                                                   bssid: BSSID,
-                                                   timeservers: Timeservers,
-                                                   nameservers: Nameservers,
-                                                   saved: Saved
+                                                   "con_name": Name,
+                                                   "identifier": Identifier,
+                                                   "autoConnect": AutoConnect,
+                                                   "con_state": ConnState,
+                                                   "defaultAccess": DefaultAccess,
+                                                   "autoConnect": AutoConnect,
+                                                   "ethernet": Ethernet,
+                                                   "favorite": Favorite,
+                                                   "con_hidden": ConnHidden,
+                                                   "ipv4": IPv4,
+                                                   "ipv4Configuration": IPv4_Configuration,
+                                                   "ipv6": IPv6,
+                                                   "ipv6Configuration": IPv6_Configuration,
+                                                   "security": Security,
+                                                   "con_type": Type,
+                                                   "strength": Strength,
+                                                   "bssid": BSSID,
+                                                   "timeservers": Timeservers,
+                                                   "nameservers": Nameservers,
+                                                   "saved": Saved
                                                })
                             }
                         }
@@ -158,25 +158,25 @@ Page {
                 }
                 onClicked: {
                     pageStack.push(Qt.resolvedUrl("ConnmanInfo.qml"), {
-                                        con_name: Name,
-                                        identifier: Identifier,
-                                        autoConnect: AutoConnect,
-                                        con_state: ConnState,
-                                        defaultAccess: DefaultAccess,
-                                        autoConnect: AutoConnect,
-                                        ethernet: Ethernet,
-                                        favorite: Favorite,
-                                        con_hidden: ConnHidden,
-                                        ipv4: IPv4,
-                                        ipv4Configuration: IPv4_Configuration,
-                                        ipv6: IPv6,
-                                        ipv6Configuration: IPv6_Configuration,
-                                        security: Security,
-                                        con_type: Type,
-                                        strength: Strength,
-                                        timeservers: Timeservers,
-                                        nameservers: Nameservers,
-                                        saved: Saved
+                                       "con_name": Name,
+                                       "identifier": Identifier,
+                                       "autoConnect": AutoConnect,
+                                       "con_state": ConnState,
+                                       "defaultAccess": DefaultAccess,
+                                       "autoConnect": AutoConnect,
+                                       "ethernet": Ethernet,
+                                       "favorite": Favorite,
+                                       "con_hidden": ConnHidden,
+                                       "ipv4": IPv4,
+                                       "ipv4Configuration": IPv4_Configuration,
+                                       "ipv6": IPv6,
+                                       "ipv6Configuration": IPv6_Configuration,
+                                       "security": Security,
+                                       "con_type": Type,
+                                       "strength": Strength,
+                                       "timeservers": Timeservers,
+                                       "nameservers": Nameservers,
+                                       "saved": Saved
                                    })
                 }
             }

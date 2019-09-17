@@ -28,7 +28,7 @@
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import "pages"
 
@@ -36,9 +36,9 @@ ApplicationWindow
 {
     id: app
     property string name: 'InfraView'
-    property string myIP: "-"
+    property string myIP: ""
     property string networkType: "Unknown"
-    property string myNetMask: "-"
+    property string myNetMask: ""
     property string networkName: ""
 
     allowedOrientations: Orientation.Portrait | Orientation.Landscape

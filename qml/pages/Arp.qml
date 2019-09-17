@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import io.thp.pyotherside 1.5
 import harbour.infraview.Launcher 1.0
@@ -33,6 +33,7 @@ Page {
 
     function loadArp() {
         python.call('call_arp.show_table', [], function (result) {
+            scanningIndicator.running = true
             listarpModel.clear()
             // Load the received data into the list model
             for (var i = 0; i < result.length; i++) {
@@ -84,6 +85,13 @@ Page {
                     loadArp()
                 })
             }
+            MenuItem {
+                text: qsTr("Refresh")
+                onClicked: {
+                    scanningIndicator.running = true
+                    loadArp()
+                }
+            }
         }
 
         SilicaListView {
@@ -131,11 +139,11 @@ Page {
                 }
 
                 function showRemorseItem() {
-                    remorseAction(qsTr("Removing ") + ipaddress,
-                                  function () {
-                                      bar.launch("/usr/share/harbour-infraview/helper/infraview-helper " + ipaddress)
-                                      loadArp()
-                                  })
+                    remorseAction(qsTr("Removing ") + ipaddress, function () {
+                        bar.launch("/usr/share/harbour-infraview/helper/infraview-helper "
+                                   + ipaddress)
+                        loadArp()
+                    })
                 }
 
                 Label {

@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import io.thp.pyotherside 1.5
 
@@ -104,7 +104,8 @@ Page {
                 icon.source: "image://theme/icon-m-location"
                 // text: qsTr("View on OpenStreetMap")
                 onClicked: {
-                    var openstreetmapURL = 'https://www.openstreetmap.org/?mlat=' + latitude + '&mlon=' + longitude + '&zoom=12'
+                    var openstreetmapURL = 'https://www.openstreetmap.org/?mlat='
+                            + latitude + '&mlon=' + longitude + '&zoom=12'
                     Qt.openUrlExternally(openstreetmapURL)
                 }
                 visible: !scanningIndicator.running

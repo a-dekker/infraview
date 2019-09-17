@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import harbour.infraview.Launcher 1.0
 
@@ -7,13 +7,13 @@ Page {
 
     property bool largeScreen: Screen.sizeCategory === Screen.Large
                                || Screen.sizeCategory === Screen.ExtraLarge
-    property string myNetDev: "-"
-    property string myGateWay: "-"
-    property string myDNS: "-"
-    property string myDHCP: "-"
-    property string myBroadcast: "-"
-    property string myDomain: "-"
-    property string mySubnetMask: "-"
+    property string myNetDev: ""
+    property string myGateWay: ""
+    property string myDNS: ""
+    property string myDHCP: ""
+    property string myBroadcast: ""
+    property string myDomain: ""
+    property string mySubnetMask: ""
 
     Component.onCompleted: {
         getNetworkInfo()
@@ -27,12 +27,17 @@ Page {
     }
 
     function getNetworkInfo() {
+        busy_sign.running = true
         app.networkType = bar.launch(
                     "cat /run/state/providers/connman/Internet/NetworkType")
         app.networkName = bar.launch(
                     "cat /run/state/providers/connman/Internet/NetworkName")
-        var myIPInfo = bar.launch(
+        bar.launch_async(
                     "/usr/share/harbour-infraview/qml/pages/get_ip_address.sh")
+    }
+
+    function setIpInfo(myIPInfo) {
+        busy_sign.running = false
         myIPInfo = myIPInfo.split(';')
         myNetDev = myIPInfo[0]
         myGateWay = myIPInfo[1]
@@ -50,9 +55,11 @@ Page {
 
         App {
             id: bar
+            onMessageChanged: setIpInfo(message)
         }
 
         PullDownMenu {
+            id: menu
             MenuItem {
                 text: qsTr("About")
                 onClicked: pageStack.push(Qt.resolvedUrl("About.qml"))
@@ -60,9 +67,10 @@ Page {
             MenuItem {
                 text: qsTr("Refresh")
                 onClicked: {
-                        getNetworkInfo()
+                    getNetworkInfo()
                 }
             }
+            busy: busy_sign.running
         }
         contentHeight: column.height
 
@@ -77,6 +85,15 @@ Page {
             PageHeader {
                 id: header
                 title: app.name
+
+                BusyIndicator {
+                    id: busy_sign
+                    anchors.left: parent.left
+                    anchors.leftMargin: Theme.horizontalPageMargin
+                    anchors.verticalCenter: parent.verticalCenter
+                    size: BusyIndicatorSize.Small
+                    running: false
+                }
             }
 
             Row {
@@ -174,6 +191,7 @@ Page {
             Row {
                 width: parent.width
                 spacing: Theme.paddingSmall
+                visible: myNetDev !== ""
 
                 Label {
                     width: parent.width * 0.5
@@ -195,6 +213,7 @@ Page {
             Row {
                 width: parent.width
                 spacing: Theme.paddingSmall
+                visible: mySubnetMask !== ""
 
                 Label {
                     width: parent.width * 0.5
@@ -202,12 +221,12 @@ Page {
                     horizontalAlignment: Text.AlignRight
                     color: Theme.primaryColor
                     font.pixelSize: Theme.fontSizeSmall
-                    wrapMode: Text.Wrap
                 }
 
                 Label {
                     width: parent.width * 0.5
-                    text: mySubnetMask !== "?" ? app.myNetMask + "\n(" + mySubnetMask + ")" : app.myNetMask
+                    text: mySubnetMask !== "?" ? app.myNetMask + "\n(" + mySubnetMask
+                                                 + ")" : app.myNetMask
                     color: Theme.highlightColor
                     font.pixelSize: Theme.fontSizeSmall
                     wrapMode: Text.Wrap
@@ -216,6 +235,7 @@ Page {
             Row {
                 width: parent.width
                 spacing: Theme.paddingSmall
+                visible: myGateWay !== ""
 
                 Label {
                     width: parent.width * 0.5
@@ -235,9 +255,9 @@ Page {
                 }
             }
             Row {
-                visible: myBroadcast !== "?"
                 width: parent.width
                 spacing: Theme.paddingSmall
+                visible: myBroadcast !== "" && app.networkType === "WLAN"
 
                 Label {
                     width: parent.width * 0.5
@@ -259,7 +279,7 @@ Page {
             Row {
                 width: parent.width
                 spacing: Theme.paddingSmall
-                visible: myDomain !== "?"
+                visible: myDomain !== "" && app.networkType === "WLAN"
 
                 Label {
                     width: parent.width * 0.5
@@ -281,7 +301,7 @@ Page {
             Row {
                 width: parent.width
                 spacing: Theme.paddingSmall
-                visible: myDHCP !== "?"
+                visible: myDHCP !== "" && app.networkType === "WLAN"
 
                 Label {
                     width: parent.width * 0.5
@@ -303,7 +323,7 @@ Page {
             Row {
                 width: parent.width
                 spacing: Theme.paddingSmall
-                visible: myDNS !== "?"
+                visible: myDNS !== "" && app.networkType === "WLAN"
 
                 Label {
                     width: parent.width * 0.5
@@ -325,6 +345,7 @@ Page {
             Row {
                 width: parent.width
                 spacing: Theme.paddingSmall
+                visible: app.myIP !== ""
 
                 Label {
                     width: parent.width * 0.5

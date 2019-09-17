@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import io.thp.pyotherside 1.5
 import harbour.infraview.Launcher 1.0
@@ -10,6 +10,10 @@ Page {
         id: bar
     }
 
+    Component.onCompleted: {
+        callNetstat()
+    }
+
     Python {
         id: python
 
@@ -19,22 +23,6 @@ Page {
             importModule('call_netstat', function () {
                 console.log('call_netstat module is now imported')
             })
-
-            call('call_netstat.show_connections', [], function (result) {
-                // Load the received data into the list model
-                for (var i = 0; i < result.length; i++) {
-                    // console.log(JSON.stringify(result[i]))
-                    if (result[i]["udp_tcp"] === "udp6"
-                            || result[i]["udp_tcp"] === "tcp6") {
-                        result[i]["localhost"] = compactIP(
-                                    result[i]["localhost"])
-                        result[i]["remotehost"] = compactIP(
-                                    result[i]["remotehost"])
-                    }
-                    listnetstatModel.append(result[i])
-                }
-                scanningIndicator.running = false
-            })
         }
 
         onError: {
@@ -42,6 +30,23 @@ Page {
             Clipboard.text = traceback
         }
     }
+
+    function callNetstat() {
+        python.call('call_netstat.show_connections', [], function (result) {
+            // Load the received data into the list model
+            for (var i = 0; i < result.length; i++) {
+                // console.log(JSON.stringify(result[i]))
+                if (result[i]["udp_tcp"] === "udp6"
+                        || result[i]["udp_tcp"] === "tcp6") {
+                    result[i]["localhost"] = compactIP(result[i]["localhost"])
+                    result[i]["remotehost"] = compactIP(result[i]["remotehost"])
+                }
+                listnetstatModel.append(result[i])
+            }
+            scanningIndicator.running = false
+        })
+    }
+
     Item {
         id: busy
         anchors.fill: parent
@@ -100,6 +105,19 @@ Page {
     SilicaFlickable {
         anchors.fill: parent
 
+        PullDownMenu {
+            id: menu
+            MenuItem {
+                text: qsTr("Refresh")
+                onClicked: {
+                    scanningIndicator.running = true
+                    listnetstatModel.clear()
+                    callNetstat()
+                }
+            }
+            busy: scanningIndicator.running
+        }
+
         SilicaListView {
             id: listnetstat
             width: parent.width
@@ -148,7 +166,7 @@ Page {
                     text: exe_name + " (" + UID + ", pid " + pid + ")"
                     width: parent.width - Theme.paddingMedium
                     truncationMode: TruncationMode.Fade
-                    color: UID === "nemo" ? Theme.secondaryColor : (UID === "android" ? Theme.secondaryHighlightColor : Theme.primaryColor )
+                    color: UID === "nemo" ? Theme.secondaryColor : (UID === "android" ? Theme.secondaryHighlightColor : Theme.primaryColor)
                 }
                 Label {
                     font.pixelSize: Theme.fontSizeSmall
@@ -168,15 +186,15 @@ Page {
                             onClicked: {
                                 pageStack.push(Qt.resolvedUrl(
                                                    "NetstatInfo.qml"), {
-                                                   uid: UID,
-                                                   udp_tcp: udp_tcp,
-                                                   localhost: localhost,
-                                                   localport: localport,
-                                                   exe_name: exe_name,
-                                                   pid: pid,
-                                                   conn_state: conn_state,
-                                                   remotehost: remotehost,
-                                                   remoteport: remoteport
+                                                   "uid": UID,
+                                                   "udp_tcp": udp_tcp,
+                                                   "localhost": localhost,
+                                                   "localport": localport,
+                                                   "exe_name": exe_name,
+                                                   "pid": pid,
+                                                   "conn_state": conn_state,
+                                                   "remotehost": remotehost,
+                                                   "remoteport": remoteport
                                                })
                             }
                         }
@@ -192,15 +210,15 @@ Page {
                 }
                 onClicked: {
                     pageStack.push(Qt.resolvedUrl("NetstatInfo.qml"), {
-                                       uid: UID,
-                                       udp_tcp: udp_tcp,
-                                       localhost: localhost,
-                                       localport: localport,
-                                       exe_name: exe_name,
-                                       pid: pid,
-                                       conn_state: conn_state,
-                                       remotehost: remotehost,
-                                       remoteport: remoteport
+                                       "uid": UID,
+                                       "udp_tcp": udp_tcp,
+                                       "localhost": localhost,
+                                       "localport": localport,
+                                       "exe_name": exe_name,
+                                       "pid": pid,
+                                       "conn_state": conn_state,
+                                       "remotehost": remotehost,
+                                       "remoteport": remoteport
                                    })
                 }
             }

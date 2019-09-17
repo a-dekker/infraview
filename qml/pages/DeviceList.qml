@@ -1,9 +1,13 @@
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import io.thp.pyotherside 1.5
 
 Page {
     id: devicePage
+
+    Component.onCompleted: {
+        callNmapScan()
+    }
 
     Python {
         id: python
@@ -14,14 +18,6 @@ Page {
             importModule('call_nmap', function () {
                 console.log('call_nmap module is now imported')
             })
-
-            call('call_nmap.scan', ['192.168.1.0'], function (result) {
-                // Load the received data into the list model
-                for (var i = 0; i < result.length; i++) {
-                    listDeviceModel.append(result[i])
-                }
-                scanningIndicator.running = false
-            })
         }
 
         onError: {
@@ -29,6 +25,17 @@ Page {
             Clipboard.text = traceback
         }
     }
+
+    function callNmapScan() {
+        python.call('call_nmap.scan', ['192.168.1.0'], function (result) {
+            // Load the received data into the list model
+            for (var i = 0; i < result.length; i++) {
+                listDeviceModel.append(result[i])
+            }
+            scanningIndicator.running = false
+        })
+    }
+
     Item {
         id: busy
         anchors.fill: parent
@@ -58,11 +65,24 @@ Page {
     SilicaFlickable {
         anchors.fill: parent
 
+        PullDownMenu {
+            id: menu
+            MenuItem {
+                text: qsTr("Refresh")
+                onClicked: {
+                    scanningIndicator.running = true
+                    listDeviceModel.clear()
+                    callNmapScan()
+                }
+            }
+            busy: scanningIndicator.running
+        }
+
         SilicaListView {
             id: listDevice
             width: parent.width
             height: parent.height
-            // PullDownMenu and PushUpMenu must be declared in SilicaFlickable, SilicaListView or SilicaGridView
+
             header: PageHeader {
                 width: listDevice.width
                 title: qsTr("Devices")
@@ -104,7 +124,7 @@ Page {
                     onClicked: {
                         var dialog = pageStack.push(Qt.resolvedUrl(
                                                         "DeviceInfo.qml"), {
-                                                        ip: ip_addr
+                                                        "ip": ip_addr
                                                     })
                     }
                     opacity: listDeviceItem.highlighted ? 0.5 : 1.0
@@ -118,14 +138,13 @@ Page {
                     text: ip_addr
                     truncationMode: TruncationMode.Fade
                 }
-                TextField {
-                    id: passLabel
-                    text: host === "" ? "Unknown device name" : host
-                    anchors.top: nameLabel.bottom
+                Label {
                     font.pixelSize: Theme.fontSizeSmall
-                    enabled: false
-                    readOnly: true
-                    textMargin: nameLabel.x
+                    text: host === "" ? "Unknown device name" : host
+                    anchors.left: computerIcon.right
+                    anchors.top: nameLabel.bottom
+                    width: parent.width - Theme.paddingMedium
+                    truncationMode: TruncationMode.Fade
                     color: Theme.highlightColor
                 }
                 Component {
@@ -136,7 +155,7 @@ Page {
                             onClicked: {
                                 pageStack.push(Qt.resolvedUrl(
                                                    "DeviceInfo.qml"), {
-                                                   ip: ip_addr
+                                                   "ip": ip_addr
                                                })
                             }
                         }
@@ -150,7 +169,7 @@ Page {
                 }
                 onClicked: {
                     pageStack.push(Qt.resolvedUrl("DeviceInfo.qml"), {
-                                       ip: ip_addr
+                                       "ip": ip_addr
                                    })
                 }
             }

@@ -6,16 +6,19 @@ def get_arp_table():
     """
         Get ARP table from /proc/net/arp
     """
-    with open('/proc/net/arp') as arpt:
+    with open("/proc/net/arp") as arpt:
         names = [
-            'IP address', 'HW type', 'Flags', 'HW address',
-            'Mask', 'Device'
+            "IP address",
+            "HW type",
+            "Flags",
+            "HW address",
+            "Mask",
+            "Device",
         ]  # arp 1.88, net-tools 1.60
 
         reader = csv.DictReader(
-            arpt, fieldnames=names,
-            skipinitialspace=True,
-            delimiter=' ')
+            arpt, fieldnames=names, skipinitialspace=True, delimiter=" "
+        )
 
         next(reader)  # Skip header.
 
@@ -27,30 +30,30 @@ def show_table():
     for index in range(len(arpcache)):
         # no spaces in names
         try:
-            arpcache[index]['ipaddress'] = arpcache[index].pop('IP address')
-            arpcache[index]['hwaddress'] = arpcache[index].pop('HW address')
-            arpcache[index]['flags'] = arpcache[index].pop('Flags')
-            arpcache[index]['hwtype'] = arpcache[index].pop('HW type')
-            arpcache[index]['iface'] = arpcache[index].pop('Device')
-            arpcache[index]['Mask'] = arpcache[index].pop('name')
+            arpcache[index]["ipaddress"] = arpcache[index].pop("IP address")
+            arpcache[index]["hwaddress"] = arpcache[index].pop("HW address")
+            arpcache[index]["flags"] = arpcache[index].pop("Flags")
+            arpcache[index]["hwtype"] = arpcache[index].pop("HW type")
+            arpcache[index]["iface"] = arpcache[index].pop("Device")
+            arpcache[index]["Mask"] = arpcache[index].pop("name")
         except BaseException:
             continue
     # remove incompleted entries
-    arpcache[:] = [d for d in arpcache if d.get('flags') != '0x0']
+    arpcache[:] = [d for d in arpcache if d.get("flags") != "0x0"]
     for index in range(len(arpcache)):
         # translate to human readable
         try:
-            if arpcache[index]['hwtype'] == '0x1':
-                arpcache[index]['hwtype'] = 'ether'
+            if arpcache[index]["hwtype"] == "0x1":
+                arpcache[index]["hwtype"] = "ether"
         except IndexError:
             continue
     # hostnames not returned, let see if we can find them
     # and use the mask field for this
     for index in range(len(arpcache)):
         try:
-            name = socket.gethostbyaddr(arpcache[index]['ipaddress'])
+            name = socket.gethostbyaddr(arpcache[index]["ipaddress"])
         except BaseException:
-            name = ['']
-        arpcache[index]['name'] = name[0]
+            name = [""]
+        arpcache[index]["name"] = name[0]
 
     return arpcache
