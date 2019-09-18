@@ -54,7 +54,7 @@
     <message>
         <location filename="../qml/pages/Arp.qml" line="89"/>
         <source>Refresh</source>
-        <translation type="unfinished">Uppdatera</translation>
+        <translation>Uppdatera</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="104"/>
@@ -311,7 +311,7 @@
     <message>
         <location filename="../qml/pages/DeviceList.qml" line="71"/>
         <source>Refresh</source>
-        <translation type="unfinished">Uppdatera</translation>
+        <translation>Uppdatera</translation>
     </message>
     <message>
         <location filename="../qml/pages/DeviceList.qml" line="88"/>
@@ -543,7 +543,7 @@
     <message>
         <location filename="../qml/pages/Netstat.qml" line="111"/>
         <source>Refresh</source>
-        <translation type="unfinished">Uppdatera</translation>
+        <translation>Uppdatera</translation>
     </message>
     <message>
         <location filename="../qml/pages/Netstat.qml" line="128"/>
@@ -634,7 +634,7 @@
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="42"/>
         <source>Traceroute</source>
-        <translation type="unfinished"></translation>
+        <translation>Traceroute</translation>
     </message>
 </context>
 <context>
@@ -642,12 +642,12 @@
     <message>
         <location filename="../qml/pages/TraceroutePage.qml" line="50"/>
         <source>Traceroute</source>
-        <translation type="unfinished"></translation>
+        <translation>Traceroute</translation>
     </message>
     <message>
         <location filename="../qml/pages/TraceroutePage.qml" line="71"/>
         <source>Enter IP or hostname for traceroute</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange IP eller värdnamn för traceroute</translation>
     </message>
 </context>
 </TS>
