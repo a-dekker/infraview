@@ -45,6 +45,7 @@ OTHER_FILES += qml/infraview.qml \
     qml/pages/ToolPage.qml \
     qml/pages/DnsPage.qml \
     qml/pages/TraceroutePage.qml \
+    qml/pages/PingPage.qml \
     python/netstat.py \
     python/nmap.py \
     rpm/infraview.spec \
@@ -76,14 +77,13 @@ script.path = /usr/share/harbour-infraview/helper
 python.files = python/*
 python.path = /usr/share/harbour-infraview/python
 
-INSTALLS += translations
-
 TRANSLATIONS = translations/harbour-infraview-es.ts \
                translations/harbour-infraview-sv.ts \
                translations/harbour-infraview-ru.ts \
+               translations/harbour-infraview-zh_CN.ts \
                translations/harbour-infraview-nl.ts
 
-INSTALLS += icon86 icon108 icon128 icon172 icon256 translations script python
+INSTALLS += icon86 icon108 icon128 icon172 icon256 translations script python translations
 
 # to disable building translations every time, comment out the
 # following CONFIG line

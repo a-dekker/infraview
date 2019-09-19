@@ -1,3 +1,7 @@
+* Rhu Sep 19 2019 arno dekker <jack.tar@example.com> 0.0.3-1
+- Added Chinese translation
+- Added ping tool page
+- Now verifying if user nemo is member of net_raw group (for ping and traceroute)
 * Tue Sep 17 2019 arno dekker <jack.tar@example.com> 0.0.2-1
 - Load mainpage info async
 - Fixed dimmed color issue

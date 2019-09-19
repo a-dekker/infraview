@@ -39,7 +39,7 @@
     <message>
         <location filename="../qml/pages/Arp.qml" line="57"/>
         <source>Loading ARP cache</source>
-        <translation><加载 ARP 缓存/translation>
+        <translation>加载 ARP 缓存</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="82"/>
@@ -139,7 +139,7 @@
         <location filename="../qml/pages/ConnmanInfo.qml" line="303"/>
         <location filename="../qml/pages/ConnmanInfo.qml" line="343"/>
         <source>true</source>
-        <translation真的</translation>
+        <translation>真的</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="356"/>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="275"/>
         <source>Ethernet</source>
-        <translation以太网></translation>
+        <translation>以太网&gt;</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="45"/>
@@ -505,7 +505,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="242"/>
         <source>Gateway</source>
-        <translation><网关/translation>
+        <translation>网关</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="264"/>
@@ -615,26 +615,49 @@
     </message>
 </context>
 <context>
+    <name>PingPage</name>
+    <message>
+        <location filename="../qml/pages/PingPage.qml" line="50"/>
+        <source>ping</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/PingPage.qml" line="71"/>
+        <source>Enter IP or hostname for ping</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ToolPage</name>
     <message>
-        <location filename="../qml/pages/ToolPage.qml" line="13"/>
+        <location filename="../qml/pages/ToolPage.qml" line="28"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ToolPage.qml" line="32"/>
+        <location filename="../qml/pages/ToolPage.qml" line="47"/>
         <source>Tools</source>
         <translation>工具</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ToolPage.qml" line="37"/>
+        <location filename="../qml/pages/ToolPage.qml" line="52"/>
         <source>DNS resolving</source>
         <translation>DNS 查询</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ToolPage.qml" line="42"/>
+        <location filename="../qml/pages/ToolPage.qml" line="57"/>
         <source>Traceroute</source>
         <translation>路由追踪</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ToolPage.qml" line="63"/>
+        <source>Ping</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ToolPage.qml" line="79"/>
+        <source>* Some features are disabled: user nemo is not a member of group &apos;net_raw&apos;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

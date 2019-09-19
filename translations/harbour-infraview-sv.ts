@@ -615,26 +615,49 @@
     </message>
 </context>
 <context>
+    <name>PingPage</name>
+    <message>
+        <location filename="../qml/pages/PingPage.qml" line="50"/>
+        <source>ping</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/PingPage.qml" line="71"/>
+        <source>Enter IP or hostname for ping</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ToolPage</name>
     <message>
-        <location filename="../qml/pages/ToolPage.qml" line="13"/>
+        <location filename="../qml/pages/ToolPage.qml" line="28"/>
         <source>About</source>
-        <translation>Om</translation>
+        <translation type="unfinished">Om</translation>
     </message>
     <message>
-        <location filename="../qml/pages/ToolPage.qml" line="32"/>
+        <location filename="../qml/pages/ToolPage.qml" line="47"/>
         <source>Tools</source>
-        <translation>Verktyg</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ToolPage.qml" line="37"/>
+        <location filename="../qml/pages/ToolPage.qml" line="52"/>
         <source>DNS resolving</source>
-        <translation>DNS-matchning</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ToolPage.qml" line="42"/>
+        <location filename="../qml/pages/ToolPage.qml" line="57"/>
         <source>Traceroute</source>
-        <translation>Traceroute</translation>
+        <translation type="unfinished">Traceroute</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ToolPage.qml" line="63"/>
+        <source>Ping</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ToolPage.qml" line="79"/>
+        <source>* Some features are disabled: user nemo is not a member of group &apos;net_raw&apos;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

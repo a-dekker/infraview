@@ -498,21 +498,40 @@
     </message>
 </context>
 <context>
+    <name>PingPage</name>
+    <message>
+        <source>ping</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter IP or hostname for ping</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ToolPage</name>
     <message>
+        <source>About</source>
+        <translation type="unfinished">О программе</translation>
+    </message>
+    <message>
         <source>Tools</source>
-        <translation>Инструменты</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>DNS resolving</source>
-        <translation>DNS запросы</translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation>О программе</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Traceroute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ping</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>* Some features are disabled: user nemo is not a member of group &apos;net_raw&apos;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
