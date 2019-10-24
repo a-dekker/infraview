@@ -619,12 +619,12 @@
     <message>
         <location filename="../qml/pages/PingPage.qml" line="50"/>
         <source>ping</source>
-        <translation type="unfinished"></translation>
+        <translation>ping</translation>
     </message>
     <message>
         <location filename="../qml/pages/PingPage.qml" line="71"/>
         <source>Enter IP or hostname for ping</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange IP eller värnamn att pinga</translation>
     </message>
 </context>
 <context>
@@ -632,32 +632,32 @@
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="28"/>
         <source>About</source>
-        <translation type="unfinished">Om</translation>
+        <translation>Om</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="47"/>
         <source>Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>Verktyg</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="52"/>
         <source>DNS resolving</source>
-        <translation type="unfinished"></translation>
+        <translation>DNS-uppslagning</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="57"/>
         <source>Traceroute</source>
-        <translation type="unfinished">Traceroute</translation>
+        <translation>Traceroute</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="63"/>
         <source>Ping</source>
-        <translation type="unfinished"></translation>
+        <translation>Pinga</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="79"/>
         <source>* Some features are disabled: user nemo is not a member of group &apos;net_raw&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Vissa funktioner är inaktiverade. Användare nemo är inte medlem i gruppen &apos;net_raw&apos;</translation>
     </message>
 </context>
 <context>
