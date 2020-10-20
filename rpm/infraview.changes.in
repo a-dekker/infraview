@@ -1,4 +1,9 @@
-* Rhu Sep 19 2019 arno dekker <jack.tar@example.com> 0.0.3-1
+* Tue Oct 20 2020 arno dekker <jack.tar@example.com> 0.0.3-3
+- Updated serveral 3rd party python libraries
+- Removed hardcoded dependencies on user nemo
+* Thu Oct 10 2020 arno dekker <jack.tar@example.com> 0.0.3-2
+- Removed non busybox grep compliant command
+* Thu Sep 19 2019 arno dekker <jack.tar@example.com> 0.0.3-1
 - Added Chinese translation
 - Added ping tool page
 - Now verifying if user nemo is member of net_raw group (for ping and traceroute)

@@ -656,8 +656,13 @@
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="79"/>
-        <source>* Some features are disabled: user nemo is not a member of group &apos;net_raw&apos;</source>
-        <translation>Vissa funktioner är inaktiverade. Användare nemo är inte medlem i gruppen &apos;net_raw&apos;</translation>
+        <source>* Some features are disabled: user </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ToolPage.qml" line="79"/>
+        <source> is not a member of group &apos;net_raw&apos;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

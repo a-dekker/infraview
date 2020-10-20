@@ -52,7 +52,10 @@ int main(int argc, char* argv[]) {
     if (appinfo.bytesAvailable() > 0) {
         appversion = appinfo.readAll();
     }
-    // SailfishApp::main() will display "qml/template.qml", if you need more
+    QString username;
+    username = qgetenv("USER");
+
+// SailfishApp::main() will display "qml/template.qml", if you need more
     // control over initialization, you can use:
     //
     //   - SailfishApp::application(int, char *[]) to get the QGuiApplication *
@@ -64,6 +67,7 @@ int main(int argc, char* argv[]) {
     qmlRegisterType<Launcher>("harbour.infraview.Launcher", 1, 0, "App");
 
     QQuickView* view = SailfishApp::createView();
+    view->rootContext()->setContextProperty("username", username);
     view->rootContext()->setContextProperty("version", appversion);
     view->setSource(SailfishApp::pathTo("qml/infraview.qml"));
     view->show();

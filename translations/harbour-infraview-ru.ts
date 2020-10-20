@@ -531,7 +531,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>* Some features are disabled: user nemo is not a member of group &apos;net_raw&apos;</source>
+        <source>* Some features are disabled: user </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source> is not a member of group &apos;net_raw&apos;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

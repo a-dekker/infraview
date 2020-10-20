@@ -166,7 +166,7 @@ Page {
                     text: exe_name + " (" + UID + ", pid " + pid + ")"
                     width: parent.width - Theme.paddingMedium
                     truncationMode: TruncationMode.Fade
-                    color: UID === "nemo" ? Theme.secondaryColor : (UID === "android" ? Theme.secondaryHighlightColor : Theme.primaryColor)
+                    color: UID === username ? Theme.secondaryColor : (UID === "android" ? Theme.secondaryHighlightColor : Theme.primaryColor)
                 }
                 Label {
                     font.pixelSize: Theme.fontSizeSmall
@@ -200,7 +200,7 @@ Page {
                         }
                         MenuItem {
                             text: qsTr("Kill process")
-                            visible: UID === "nemo"
+                            visible: UID === username
                             onClicked: {
                                 bar.launch("/bin/kill -9 " + pid)
                                 listnetstatModel.remove(index)

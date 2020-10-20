@@ -13,7 +13,7 @@ SUBNET_MASK="?"
 ROUTE_INFO=$(/sbin/ip route | head -1)
 
 # get further info
-NETW_DEV=$(echo "${ROUTE_INFO}" | grep -oP "dev\s+\K\w+")
+NETW_DEV=$(echo "${ROUTE_INFO}" | awk '{print $NF}')
 GATEWAY=$(echo "${ROUTE_INFO}" | sed '/via/s/.*via \([^ ][^ ]*\)[ ]*.*/\1/')
 IP=$(/sbin/ip -o -4 addr list "${NETW_DEV}" | awk '{print $4}' | cut -d/ -f1)
 NETWORK_MASK=$(/sbin/ip route | grep "${NETW_DEV}" | grep "proto kernel" | cut -f1 -d" ")

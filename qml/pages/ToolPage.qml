@@ -9,7 +9,7 @@ Page {
 
     Component.onCompleted: {
         var in_net_raw_group = bar.launch(
-                    'grep -e "net_raw:x:[0-9].*nemo*" /etc/group')
+                    'grep -e "net_raw:x:[0-9].*' + username + '*" /etc/group')
         if (in_net_raw_group === "") {
             groupsAvailable = false
         }
@@ -76,7 +76,7 @@ Page {
                     width: toolPage.width - 2 * x
                     font.pixelSize: Theme.fontSizeSmall
                     wrapMode: Text.Wrap
-                    text: qsTr("* Some features are disabled: user nemo is not a member of group 'net_raw'")
+                    text: qsTr("* Some features are disabled: user ") + username + qsTr(" is not a member of group 'net_raw'")
                     visible: !groupsAvailable
             }
         }
