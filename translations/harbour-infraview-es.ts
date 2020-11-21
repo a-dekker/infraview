@@ -339,7 +339,7 @@
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="57"/>
         <source>Enter IP or hostname to resolve</source>
-        <translation>Indica IP o nombre de host</translation>
+        <translation>Introduce IP o nombre de host</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="76"/>
