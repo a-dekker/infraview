@@ -54,7 +54,7 @@
     <message>
         <location filename="../qml/pages/Arp.qml" line="89"/>
         <source>Refresh</source>
-        <translation type="unfinished">Actualizar</translation>
+        <translation>Actualizar</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="104"/>
@@ -311,7 +311,7 @@
     <message>
         <location filename="../qml/pages/DeviceList.qml" line="71"/>
         <source>Refresh</source>
-        <translation type="unfinished">Actualizar</translation>
+        <translation>Actualizar</translation>
     </message>
     <message>
         <location filename="../qml/pages/DeviceList.qml" line="88"/>
@@ -339,7 +339,7 @@
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="57"/>
         <source>Enter IP or hostname to resolve</source>
-        <translation>Indica IP o nombre de host para resolver</translation>
+        <translation>Introduce IP o nombre de host</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="76"/>
@@ -543,7 +543,7 @@
     <message>
         <location filename="../qml/pages/Netstat.qml" line="111"/>
         <source>Refresh</source>
-        <translation type="unfinished">Actualizar</translation>
+        <translation>Actualizar</translation>
     </message>
     <message>
         <location filename="../qml/pages/Netstat.qml" line="128"/>
@@ -619,12 +619,12 @@
     <message>
         <location filename="../qml/pages/PingPage.qml" line="50"/>
         <source>ping</source>
-        <translation type="unfinished"></translation>
+        <translation>ping</translation>
     </message>
     <message>
         <location filename="../qml/pages/PingPage.qml" line="71"/>
         <source>Enter IP or hostname for ping</source>
-        <translation type="unfinished"></translation>
+        <translation>Introduce IP o nombre de host</translation>
     </message>
 </context>
 <context>
@@ -632,37 +632,37 @@
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="28"/>
         <source>About</source>
-        <translation type="unfinished">Acerca de</translation>
+        <translation>Acerca de</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="47"/>
         <source>Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>Herramientas</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="52"/>
         <source>DNS resolving</source>
-        <translation type="unfinished"></translation>
+        <translation>Resolución DNS</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="57"/>
         <source>Traceroute</source>
-        <translation type="unfinished"></translation>
+        <translation>Traceroute</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="63"/>
         <source>Ping</source>
-        <translation type="unfinished"></translation>
+        <translation>Ping</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="79"/>
         <source>* Some features are disabled: user </source>
-        <translation type="unfinished"></translation>
+        <translation>* Algunas funcionalidades están deshabilitadas: el usuario </translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="79"/>
         <source> is not a member of group &apos;net_raw&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation> no es miembro del grupo &apos;net_raw&apos;</translation>
     </message>
 </context>
 <context>
@@ -670,12 +670,12 @@
     <message>
         <location filename="../qml/pages/TraceroutePage.qml" line="50"/>
         <source>Traceroute</source>
-        <translation type="unfinished"></translation>
+        <translation>Traceroute</translation>
     </message>
     <message>
         <location filename="../qml/pages/TraceroutePage.qml" line="71"/>
         <source>Enter IP or hostname for traceroute</source>
-        <translation type="unfinished"></translation>
+        <translation>Introduce IP o nombre de host</translation>
     </message>
 </context>
 </TS>
