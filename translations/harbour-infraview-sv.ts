@@ -657,12 +657,12 @@
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="79"/>
         <source>* Some features are disabled: user </source>
-        <translation type="unfinished"></translation>
+        <translation>* Vissa funktioner är inaktiverade: Användaren </translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="79"/>
         <source> is not a member of group &apos;net_raw&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation> är inte medlem i gruppen &quot;net_raw&quot;</translation>
     </message>
 </context>
 <context>
