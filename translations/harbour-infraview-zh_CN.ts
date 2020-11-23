@@ -39,12 +39,12 @@
     <message>
         <location filename="../qml/pages/Arp.qml" line="57"/>
         <source>Loading ARP cache</source>
-        <translation>加载 ARP 缓存</translation>
+        <translation>加载ARP缓存</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="82"/>
         <source>Clear all ARP entries</source>
-        <translation>清除全部 ARP 入口</translation>
+        <translation>清除全部ARP入口</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="83"/>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../qml/pages/Arp.qml" line="104"/>
         <source>ARP cache</source>
-        <translation>ARP 缓存</translation>
+        <translation>ARP缓存</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="142"/>
@@ -69,17 +69,17 @@
     <message>
         <location filename="../qml/pages/Arp.qml" line="171"/>
         <source>Copy IP address to clipboard</source>
-        <translation>复制 IP 地址到剪切板</translation>
+        <translation>复制IP地址到剪切板</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="177"/>
         <source>Copy MAC address to clipboard</source>
-        <translation>复制 MAC 地址到剪切板</translation>
+        <translation>复制MAC地址到剪切板</translation>
     </message>
     <message>
         <location filename="../qml/pages/Arp.qml" line="183"/>
         <source>Remove ARP entry</source>
-        <translation>移除 ARP 入口</translation>
+        <translation>移除ARP入口</translation>
     </message>
 </context>
 <context>
@@ -107,7 +107,7 @@
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="194"/>
         <source>IPv4 Configuration</source>
-        <translation>IPv4 配置</translation>
+        <translation>IPv4配置</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="215"/>
@@ -117,7 +117,7 @@
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="235"/>
         <source>IPv6 Configuration</source>
-        <translation>IPv6 配置</translation>
+        <translation>IPv6配置</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="255"/>
@@ -133,13 +133,13 @@
         <location filename="../qml/pages/ConnmanInfo.qml" line="303"/>
         <location filename="../qml/pages/ConnmanInfo.qml" line="343"/>
         <source>false</source>
-        <translation>假的</translation>
+        <translation>假</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="303"/>
         <location filename="../qml/pages/ConnmanInfo.qml" line="343"/>
         <source>true</source>
-        <translation>真的</translation>
+        <translation>真</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="356"/>
@@ -169,7 +169,7 @@
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="45"/>
         <source>ConnMan connection details</source>
-        <translation>ConnMan 连接详情</translation>
+        <translation>ConnMan连接详情</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanInfo.qml" line="153"/>
@@ -202,7 +202,7 @@
     <message>
         <location filename="../qml/pages/ConnmanNetServices.qml" line="69"/>
         <source>Known ConnMan connections</source>
-        <translation>已知 ConnMan 连接</translation>
+        <translation>已知ConnMan连接</translation>
     </message>
     <message>
         <location filename="../qml/pages/ConnmanNetServices.qml" line="112"/>
@@ -230,7 +230,7 @@
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="58"/>
         <source>IP address</source>
-        <translation>IP 地址</translation>
+        <translation>IP地址</translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="25"/>
@@ -258,7 +258,7 @@
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="120"/>
         <source>MAC address</source>
-        <translation>MAC 地址</translation>
+        <translation>MAC地址</translation>
     </message>
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="143"/>
@@ -293,7 +293,7 @@
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="281"/>
         <source>Open TCP ports</source>
-        <translation>打开 TCP 端口</translation>
+        <translation>打开TCP端口</translation>
     </message>
     <message>
         <location filename="../qml/pages/DeviceInfo.qml" line="291"/>
@@ -326,7 +326,7 @@
     <message>
         <location filename="../qml/pages/DeviceList.qml" line="163"/>
         <source>Copy IP address to clipboard</source>
-        <translation>复制 IP 地址到剪切板</translation>
+        <translation>复制IP地址到剪切板</translation>
     </message>
 </context>
 <context>
@@ -334,7 +334,7 @@
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="46"/>
         <source>DNS query</source>
-        <translation>DNS 查询</translation>
+        <translation>DNS查询</translation>
     </message>
     <message>
         <location filename="../qml/pages/DnsPage.qml" line="57"/>
@@ -405,17 +405,17 @@
     <message>
         <location filename="../qml/pages/LocationInfo.qml" line="64"/>
         <source>Retrieving IP location info</source>
-        <translation>正在检测 IP 地址信息</translation>
+        <translation>正在检测IP地址信息</translation>
     </message>
     <message>
         <location filename="../qml/pages/LocationInfo.qml" line="95"/>
         <source>IP location info</source>
-        <translation>IP 地址信息</translation>
+        <translation>IP地址信息</translation>
     </message>
     <message>
         <location filename="../qml/pages/LocationInfo.qml" line="119"/>
         <source>External IP</source>
-        <translation>外部 IP</translation>
+        <translation>外部IP</translation>
     </message>
     <message>
         <location filename="../qml/pages/LocationInfo.qml" line="142"/>
@@ -480,7 +480,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="145"/>
         <source>ConnMan connections</source>
-        <translation>ConnMan 连接</translation>
+        <translation>ConnMan连接</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="155"/>
@@ -530,7 +530,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="352"/>
         <source>IP address</source>
-        <translation>IP 地址</translation>
+        <translation>IP地址</translation>
     </message>
 </context>
 <context>
@@ -558,7 +558,7 @@
     <message>
         <location filename="../qml/pages/Netstat.qml" line="202"/>
         <source>Kill process</source>
-        <translation>杀进程</translation>
+        <translation>杀掉进程</translation>
     </message>
 </context>
 <context>
@@ -586,7 +586,7 @@
     <message>
         <location filename="../qml/pages/NetstatInfo.qml" line="114"/>
         <source>Process ID</source>
-        <translation>进程 ID</translation>
+        <translation>进程ID</translation>
     </message>
     <message>
         <location filename="../qml/pages/NetstatInfo.qml" line="135"/>
@@ -619,12 +619,12 @@
     <message>
         <location filename="../qml/pages/PingPage.qml" line="50"/>
         <source>ping</source>
-        <translation type="unfinished"></translation>
+        <translation>ping</translation>
     </message>
     <message>
         <location filename="../qml/pages/PingPage.qml" line="71"/>
         <source>Enter IP or hostname for ping</source>
-        <translation type="unfinished"></translation>
+        <translation>输入 IP 或主机名称以Ping</translation>
     </message>
 </context>
 <context>
@@ -652,17 +652,17 @@
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="63"/>
         <source>Ping</source>
-        <translation type="unfinished"></translation>
+        <translation>Ping</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="79"/>
         <source>* Some features are disabled: user </source>
-        <translation type="unfinished"></translation>
+        <translation>*  某些功能已被禁用:用户</translation>
     </message>
     <message>
         <location filename="../qml/pages/ToolPage.qml" line="79"/>
         <source> is not a member of group &apos;net_raw&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>不是群组成员</translation>
     </message>
 </context>
 <context>
