@@ -446,89 +446,89 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="64"/>
+        <location filename="../qml/pages/MainPage.qml" line="75"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="68"/>
+        <location filename="../qml/pages/MainPage.qml" line="79"/>
         <source>Refresh</source>
         <translation>刷新</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="103"/>
+        <location filename="../qml/pages/MainPage.qml" line="114"/>
         <source>External IP info</source>
         <translation>外部IP信息</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="108"/>
-        <location filename="../qml/pages/MainPage.qml" line="116"/>
+        <location filename="../qml/pages/MainPage.qml" line="119"/>
+        <location filename="../qml/pages/MainPage.qml" line="127"/>
         <source>Devices in current network</source>
         <translation>设备当前网络</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="125"/>
+        <location filename="../qml/pages/MainPage.qml" line="136"/>
         <source>ARP cache table</source>
         <translation>ARP缓存表</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="130"/>
-        <location filename="../qml/pages/MainPage.qml" line="138"/>
+        <location filename="../qml/pages/MainPage.qml" line="141"/>
+        <location filename="../qml/pages/MainPage.qml" line="149"/>
         <source>Network port connections</source>
         <translation>网络端口连接</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="145"/>
+        <location filename="../qml/pages/MainPage.qml" line="156"/>
         <source>ConnMan connections</source>
         <translation>ConnMan连接</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="155"/>
+        <location filename="../qml/pages/MainPage.qml" line="166"/>
         <source>Network type</source>
         <translation>网络类型</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="176"/>
+        <location filename="../qml/pages/MainPage.qml" line="187"/>
         <source>Network name</source>
         <translation>网络名称</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="198"/>
+        <location filename="../qml/pages/MainPage.qml" line="209"/>
         <source>Network device</source>
         <translation>设备信息</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="220"/>
+        <location filename="../qml/pages/MainPage.qml" line="231"/>
         <source>Subnet Mask</source>
         <translation>子网掩码</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="242"/>
+        <location filename="../qml/pages/MainPage.qml" line="253"/>
         <source>Gateway</source>
         <translation>网关</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="264"/>
+        <location filename="../qml/pages/MainPage.qml" line="275"/>
         <source>Broadcast</source>
         <translation>宽带</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="286"/>
+        <location filename="../qml/pages/MainPage.qml" line="297"/>
         <source>Domain</source>
         <translation>域</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="308"/>
+        <location filename="../qml/pages/MainPage.qml" line="319"/>
         <source>DHCP</source>
         <translation>DHCP</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="330"/>
+        <location filename="../qml/pages/MainPage.qml" line="341"/>
         <source>DNS</source>
         <translation>DNS</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="352"/>
+        <location filename="../qml/pages/MainPage.qml" line="363"/>
         <source>IP address</source>
         <translation>IP地址</translation>
     </message>

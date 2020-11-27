@@ -1,6 +1,7 @@
-import QtQuick 2.2
+import QtQuick 2.5
 import Sailfish.Silica 1.0
 import harbour.infraview.Launcher 1.0
+import org.freedesktop.contextkit 1.0
 
 Page {
     id: mainPage
@@ -19,6 +20,20 @@ Page {
         getNetworkInfo()
     }
 
+    ContextProperty {
+        id: nwType
+        key: "Internet.NetworkType"
+        onValueChanged: app.networkType = value
+        value: ""
+    }
+
+    ContextProperty {
+        id: nwName
+        key: "Internet.NetworkName"
+        onValueChanged: app.networkName = value
+        value: ""
+    }
+
     onStatusChanged: {
         switch (status) {
         case PageStatus.Active:
@@ -28,10 +43,6 @@ Page {
 
     function getNetworkInfo() {
         busy_sign.running = true
-        app.networkType = bar.launch(
-                    "cat /run/state/providers/connman/Internet/NetworkType")
-        app.networkName = bar.launch(
-                    "cat /run/state/providers/connman/Internet/NetworkName")
         bar.launch_async(
                     "/usr/share/harbour-infraview/qml/pages/get_ip_address.sh")
     }
