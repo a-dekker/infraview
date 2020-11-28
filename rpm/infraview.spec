@@ -14,7 +14,7 @@ Name:       harbour-infraview
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Examine network aspects of devices
 Version:    0.4
-Release:    1
+Release:    2
 Group:      Qt/Qt
 License:    LICENSE
 URL:        https://github.com/a-dekker/infraview
@@ -25,6 +25,7 @@ Requires:   dbus-python3
 Requires:   pyotherside-qml-plugin-python3-qt5 >= 1.3.0
 Requires:   python3-base
 Requires:   nmap-suid >= 7.50-3
+Requires:   nemo-qml-plugin-contextkit-qt5
 BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
