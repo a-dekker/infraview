@@ -1,4 +1,8 @@
-* Sat Nov 21 2020 arno dekker <jack.tar@example.com> 0.0.4-1
+* Mon Nov 30 2020 arno dekker <jack.tar@example.com> 0.0.4-3
+- Dynamically update network details on network change
+* Sat Nov 28 2020 arno dekker <jack.tar@example.com> 0.0.4-2
+- Change dependencies
+* Sat Nov 28 2020 arno dekker <jack.tar@example.com> 0.0.4-1
 - Updated Chinese
 - No longer use deprecated statefs
 * Sat Nov 21 2020 arno dekker <jack.tar@example.com> 0.0.3-4

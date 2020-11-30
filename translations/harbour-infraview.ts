@@ -446,12 +446,12 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="75"/>
+        <location filename="../qml/pages/MainPage.qml" line="76"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="79"/>
+        <location filename="../qml/pages/MainPage.qml" line="80"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>

@@ -16,14 +16,15 @@ Page {
     property string myDomain: ""
     property string mySubnetMask: ""
 
-    Component.onCompleted: {
-        getNetworkInfo()
-    }
-
     ContextProperty {
         id: nwType
         key: "Internet.NetworkType"
-        onValueChanged: app.networkType = value
+        onValueChanged: {
+            app.networkType = value
+            if (app.networkType !== "") {
+                getNetworkInfo()
+            }
+        }
         value: ""
     }
 
@@ -85,8 +86,7 @@ Page {
         }
         contentHeight: column.height
 
-        VerticalScrollDecorator {
-        }
+        VerticalScrollDecorator {}
 
         Column {
             id: column
