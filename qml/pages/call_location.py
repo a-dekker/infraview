@@ -11,7 +11,10 @@ def get_geolocation():
     geo_info = {}
     try:
         ext_ip = get("https://api.ipify.org").text
-        query = get(url="https://tools.keycdn.com/geo.json?host=" + ext_ip)
+        headers = {
+            'User-Agent': 'keycdn-tools:https://example.com'
+        }
+        query = get(url="https://tools.keycdn.com/geo.json?host=" + ext_ip, headers=headers)
         result = query.json()
         geo_info["latitude"] = result["data"]["geo"]["latitude"]
         geo_info["longitude"] = result["data"]["geo"]["longitude"]

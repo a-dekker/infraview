@@ -1,3 +1,5 @@
+* Mon Nov 30 2020 arno dekker <jack.tar@example.com> 0.0.4-4
+- External IP info now needs user-agent set
 * Mon Nov 30 2020 arno dekker <jack.tar@example.com> 0.0.4-3
 - Dynamically update network details on network change
 * Sat Nov 28 2020 arno dekker <jack.tar@example.com> 0.0.4-2
