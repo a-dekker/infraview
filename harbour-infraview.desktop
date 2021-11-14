@@ -4,3 +4,6 @@ X-Nemo-Application-Type=silica-qt5
 Icon=harbour-infraview
 Exec=harbour-infraview
 Name=InfraView
+
+[X-Sailjail]
+Sandboxing=Disabled

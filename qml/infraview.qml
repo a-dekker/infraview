@@ -1,3 +1,5 @@
+
+
 /*
   Copyright (C) 2013 Jolla Ltd.
   Contact: Thomas Perl <thomas.perl@jollamobile.com>
@@ -27,13 +29,11 @@
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-
 import QtQuick 2.5
 import Sailfish.Silica 1.0
 import "pages"
 
-ApplicationWindow
-{
+ApplicationWindow {
     id: app
     property string name: 'InfraView'
     property string myIP: ""
@@ -41,11 +41,11 @@ ApplicationWindow
     property string myNetMask: ""
     property string networkName: ""
 
-    allowedOrientations: Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted
-    _defaultPageOrientations: Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted
+    allowedOrientations: defaultAllowedOrientations
+    _defaultPageOrientations: defaultAllowedOrientations
 
-    initialPage: Component { MainPage { } }
+    initialPage: Component {
+        MainPage {}
+    }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
 }
