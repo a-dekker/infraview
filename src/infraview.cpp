@@ -41,17 +41,6 @@
 #include "osread.h"
 
 int main(int argc, char* argv[]) {
-    QProcess appinfo;
-    QString appversion;
-    // read app version from rpm database on startup
-    appinfo.start("/bin/rpm", QStringList() << "-qa"
-                                            << "--queryformat"
-                                            << "%{version}-%{RELEASE}"
-                                            << "harbour-infraview");
-    appinfo.waitForFinished(-1);
-    if (appinfo.bytesAvailable() > 0) {
-        appversion = appinfo.readAll();
-    }
     QString username;
     username = qgetenv("USER");
 
@@ -68,7 +57,8 @@ int main(int argc, char* argv[]) {
 
     QQuickView* view = SailfishApp::createView();
     view->rootContext()->setContextProperty("username", username);
-    view->rootContext()->setContextProperty("version", appversion);
+    view->rootContext()->setContextProperty("version", APP_VERSION);
+    view->rootContext()->setContextProperty("buildyear", BUILD_YEAR);
     view->setSource(SailfishApp::pathTo("qml/infraview.qml"));
     view->show();
     return app->exec();

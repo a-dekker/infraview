@@ -27,7 +27,7 @@ except:
 
 def scan(network):
     myip_subnet = subprocess.getoutput(
-        "/sbin/ip -o -f inet addr show | awk '/scope global/ {print $4}'"
+        "ip -o -f inet addr show | awk '/scope global/ {print $4}'"
     )
     nm.scan(hosts=myip_subnet, arguments="nmap -sn")
     iplist = []
@@ -49,7 +49,7 @@ def scan(network):
 
 def devinfo(ip):
     myip = subprocess.getoutput(
-        "/sbin/ip -o -f inet addr show | awk '/scope global/ {print $4}'|cut -f1 -d/"
+        "ip -o -f inet addr show | awk '/scope global/ {print $4}'|cut -f1 -d/"
     )
     tcp_ports = ""
     nm.scan(ip, arguments="-O")

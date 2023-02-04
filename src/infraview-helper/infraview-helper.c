@@ -6,7 +6,7 @@
 #define DELIM "."
 const char DEL_ARP[] = "delete_arp";
 const char NETSTAT_PY[] = "/usr/share/harbour-infraview/python/netstat.py";
-char *IP_FLUSH_APP[] = {"/sbin/ip", "-s", "-s", "neigh", "flush", "all", NULL};
+char *IP_FLUSH_APP[] = {"ip", "-s", "-s", "neigh", "flush", "all", NULL};
 
 /**
  * wraps the call to execvp including perror output
