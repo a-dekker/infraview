@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-import pwd
-import os
-import re
 import glob
+import os
+import pwd
+import re
 
 PROC_TCP4 = "/proc/net/tcp"
 PROC_UDP4 = "/proc/net/udp"
@@ -26,40 +26,40 @@ TCP_STATE = {
 
 
 def _tcp4load():
-    """ Read the table of tcp connections & remove the header  """
-    with open(PROC_TCP4, "r") as f:
+    """Read the table of tcp connections & remove the header"""
+    with open(PROC_TCP4, "r", encoding="utf-8") as f:
         content = f.readlines()
         content.pop(0)
     return content
 
 
 def _tcp6load():
-    """ Read the table of tcpv6 connections & remove the header"""
-    with open(PROC_TCP6, "r") as f:
+    """Read the table of tcpv6 connections & remove the header"""
+    with open(PROC_TCP6, "r", encoding="utf-8") as f:
         content = f.readlines()
         content.pop(0)
     return content
 
 
 def _udp4load():
-    """Read the table of udp connections & remove the header """
-    with open(PROC_UDP4, "r") as f:
+    """Read the table of udp connections & remove the header"""
+    with open(PROC_UDP4, "r", encoding="utf-8") as f:
         content = f.readlines()
         content.pop(0)
     return content
 
 
 def _udp6load():
-    """Read the table of udp connections & remove the header """
-    with open(PROC_UDP6, "r") as f:
+    """Read the table of udp connections & remove the header"""
+    with open(PROC_UDP6, "r", encoding="utf-8") as f:
         content = f.readlines()
         content.pop(0)
     return content
 
 
 def _packetload():
-    """ Read the contents of /proc/net/packet for finding processes with packet sockets """
-    with open(PROC_PACKET, "r") as f:
+    """Read the contents of /proc/net/packet for finding processes with packet sockets"""
+    with open(PROC_PACKET, "r", encoding="utf-8") as f:
         content = f.readlines()
         content.pop(0)
     return content
