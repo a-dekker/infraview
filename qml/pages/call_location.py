@@ -26,7 +26,7 @@ def get_geolocation():
         geo_info["postal_code"] = result["data"]["geo"]["postal_code"]
         geo_info["isp"] = result["data"]["geo"]["isp"]
         geo_info["host"] = result["data"]["geo"]["host"]
-        geo_info["rdns"] = result["data"]["geo"]["rdns"]
+        geo_info["asn"] = result["data"]["geo"]["asn"]
 
         return geo_info
     except BaseException:

@@ -17,7 +17,7 @@ Page {
     property string postal_code: "Unknown"
     property string isp: "Unknown"
     property string host: "Unknown"
-    property string rdns: "Unknown"
+    property string asn: "Unknown"
 
     Python {
         id: python
@@ -41,7 +41,7 @@ Page {
                 postal_code = result["postal_code"]
                 isp = result["isp"]
                 host = result["host"]
-                rdns = result["rdns"]
+                asn = result["asn"]
                 scanningIndicator.running = false
             })
         }
@@ -231,7 +231,7 @@ Page {
 
                 Label {
                     width: parent.width * 0.5
-                    text: qsTr("rDNS")
+                    text: qsTr("ASN")
                     visible: !scanningIndicator.running
                     horizontalAlignment: Text.AlignRight
                     color: Theme.primaryColor
@@ -241,7 +241,7 @@ Page {
 
                 Label {
                     width: parent.width * 0.5 - Theme.paddingMedium
-                    text: rdns
+                    text: asn
                     visible: !scanningIndicator.running
                     color: Theme.highlightColor
                     font.pixelSize: Theme.fontSizeSmall

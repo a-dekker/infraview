@@ -1,3 +1,5 @@
+* Sat May 02 2026 arno dekker <jack.tar@example.com> 0.0.6-2
+- fix ISP location finder
 * Sat Feb 04 2023 arno dekker <jack.tar@example.com> 0.0.6-1
 - Remove path from "ip" as it changed in SFOS 4.5
 * Sun Nov 14 2021 arno dekker <jack.tar@example.com> 0.0.5-1
